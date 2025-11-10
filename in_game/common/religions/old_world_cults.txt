@@ -4,12 +4,11 @@ imperial_cults = {
 
     language = reikspiel_language
 
-    has_karma = yes
-    max_sects = 3
+    max_cults = 3
 
     definition_modifier = {
         tolerance_heretic = 1
-        monthly_karma = 0.1
+
         global_max_literacy = 5
         can_have_monasteries = yes
     }
@@ -23,12 +22,12 @@ sigmarian_heresy = {
 
     language = reikspiel_language
 
-    has_karma = yes
-    max_sects = 3
+
+    max_cults = 3
 
     definition_modifier = {
         tolerance_heretic = 1
-        monthly_karma = 0.1
+
         global_max_literacy = 5
         can_have_monasteries = yes
     }

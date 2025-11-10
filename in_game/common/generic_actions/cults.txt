@@ -1,0 +1,526 @@
+﻿join_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			religion = {
+				has_cults = yes
+
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			any_international_organizations_member_of = {
+                international_organization_type = international_organization_type:cult
+                count < {
+					value = scope:actor.religion.max_cults
+					min = 0
+				}
+            }
+		}
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+	
+	price = price:join_cult
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = target
+		name = "join_cult_choose_cult"
+		none_available_msg_key = "join_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			OR = {
+				AND = {
+					scope:actor = { religion = religion:imperial_cults }
+					var:religion = religion:sigmarian_heresy
+				}
+			}
+			scope:actor = {
+				NOT = { is_member_of_international_organization = root }
+			}
+		}
+		enabled = {
+			scope:actor = {
+				can_join_international_organization = root
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = {
+				add_country_to_international_organization = scope:actor
+			}
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+		}
+	}
+}
+
+disfavor_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			NOT = { has_variable = disfavoring_cult }
+			religion = {
+				has_cults = yes
+
+			}
+		}
+	}
+
+	allow = {
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 24
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+
+	price = price:disfavor_cult
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		interaction_source_list = {
+			scope:actor = {
+				every_international_organizations_member_of = {
+					limit = {
+						international_organization_type = international_organization_type:cult
+					}
+					add_to_list = source
+				}
+			}
+		}
+		cache_targets = yes
+		target_flag = target
+		name = "disfavor_cult_choose_cult"
+		none_available_msg_key = "disfavor_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			OR = {
+				var:religion = scope:actor.religion
+
+				AND = {
+					scope:actor = { religion = religion:imperial_cults }
+					var:religion = religion:sigmarian_heresy
+				}
+			}
+			scope:actor = {
+				is_member_of_international_organization = root
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				set_variable = {
+					name = disfavoring_cult
+					value = scope:target
+				}
+			}
+			scope:target = { add_enemy_to_international_organization = scope:actor }
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+			multiply = -1
+		}
+	}
+}
+
+stop_disfavoring_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			has_variable = disfavoring_cult
+			religion = {
+				has_cults = yes
+
+			}
+		}
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+
+	price = price:stop_disfavoring_cult
+
+	allow = {
+	}
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = target
+		name = "stop_disfavoring_cult_choose_cult"
+		none_available_msg_key = "stop_disfavoring_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			scope:actor = {
+				has_variable = disfavoring_cult
+				var:disfavoring_cult ?= prev
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = { remove_enemy_from_international_organization = scope:actor }
+			scope:actor = {
+				remove_variable = disfavoring_cult
+			}
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+		}
+	}
+}
+
+promote_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			NOT = { has_variable = promoting_cult }
+			religion = {
+				has_cults = yes
+
+			}
+		}
+	}
+
+	allow = {
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 12
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+
+	price = price:promote_cult
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = target
+		name = "promote_cult_choose_cult"
+		none_available_msg_key = "promote_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			OR = {
+
+				AND = {
+					scope:actor = { religion = religion:imperial_cults }
+					var:religion = religion:sigmarian_heresy
+				}
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				set_variable = {
+					name = promoting_cult
+					value = scope:target
+				}
+			}
+			scope:target = {
+				add_to_variable_list = {
+					name = cult_supporters
+					target = scope:actor
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+		}
+	}
+}
+
+stop_promoting_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			has_variable = promoting_cult
+			religion = {
+				has_cults = yes
+
+			}
+		}
+	}
+
+	allow = {
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+
+	price = price:stop_promoting_cult
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = target
+		name = "promote_cult_choose_cult"
+		none_available_msg_key = "stop_promoting_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			scope:actor = {
+				has_variable = promoting_cult
+				var:promoting_cult ?= prev
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				remove_variable = promoting_cult
+			}
+			scope:target = {
+				remove_list_variable = {
+					name = cult_supporters
+					target = scope:actor
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+			multiply = -1
+		}
+	}
+}
+
+leave_cult = {
+	type = religious
+
+	sound = UI_action_religion_generic
+	
+	potential = {
+		scope:actor ?= {
+			religion = {
+				has_cults = yes
+
+			}
+			any_international_organizations_member_of = { international_organization_type = international_organization_type:cult }
+		}
+	}
+
+	allow = {
+	}
+
+	ai_tick = monthly
+	ai_tick_frequency = 6
+
+	automation_tick = monthly
+	automation_tick_frequency = 1
+	player_automated_category = religiousdoctrines
+	
+	price = price:leave_cult
+	
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = recipient
+		name = "choose_religion"
+		column = {
+			data = name
+		}
+		visible = {
+			has_cults = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = target
+		name = "leave_cult_choose_cult"
+		none_available_msg_key = "leave_cult_no_ios"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:cult
+			scope:actor = {
+				is_member_of_international_organization = root
+			}
+		}
+		enabled = {
+			scope:actor = {
+				can_leave_international_organization = root
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = {
+				remove_country_from_international_organization = {
+					country = scope:actor
+					reason = DecidedToLeave
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		#how useful is this cult?
+		add = {
+			value = "scope:target.modifier_utility(scope:actor)"
+			multiply = -1
+		}
+	}
+}
+
+

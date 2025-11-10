@@ -1,0 +1,33 @@
+international_organization_manager = {
+    add_international_organization = { #manaan
+        type = cult
+        creation_date = 1.1.1
+        members = {
+            TAL
+        }
+        laws = {
+            manaan_policy
+        }
+        icon = tiantai_buddhism
+        variables = {
+            cult_favor = 30
+            religion = religion:imperial_cults
+        }
+        areas = {
+
+        }
+        provinces = {
+
+        }
+        locations = {
+
+            testprovince2
+            testprovince3
+            testprovince4
+            testprovince5
+            testprovince6
+        }
+
+    }
+
+}

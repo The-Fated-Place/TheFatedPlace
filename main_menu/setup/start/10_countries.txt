@@ -4,7 +4,7 @@ countries = {
 	countries = {
 		TAL = {	#Ottilian Empire/Talabecland
 			own_control_core = {
-				testprovince1
+                testprovince1
 				testprovince2
 				testprovince3
 				testprovince4

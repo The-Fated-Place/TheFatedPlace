@@ -1,0 +1,16 @@
+﻿cults_list = {
+	potential = {
+		religion = {
+			has_cults = yes
+		}
+	}
+	actions = {
+		join_cult
+		disfavor_cult
+		stop_disfavoring_cult
+		promote_cult
+		stop_promoting_cult
+		leave_cult
+
+	}
+}

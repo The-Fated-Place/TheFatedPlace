@@ -1,0 +1,956 @@
+﻿#################################################
+# All International Organizations				#
+#################################################
+unlock_resolution_effect = {
+	custom_description = {
+		text = unlock_resolution_effect_text
+		value = resolution:$type$
+		if = {
+			limit = { NOT = { has_variable = unlocked_resolution_$type$ } }
+			set_variable = {
+				name = unlocked_resolution_$type$
+				value = 1
+			}
+		}
+		else = {
+			change_variable = {
+				name = unlocked_resolution_$type$
+				add = 1
+			}
+		}
+	}
+}
+lock_resolution_effect = {
+	custom_description = {
+		text = lock_resolution_effect_text
+		value = resolution:$type$
+		if = {
+			limit = {
+				has_variable = unlocked_resolution_$type$
+				var:unlocked_resolution_$type$ > 1
+			}
+			change_variable = {
+				name = unlocked_resolution_$type$
+				subtract = 1
+			}
+		}
+		else = {
+			if = {
+				limit = { has_variable = unlocked_resolution_$type$ }
+				remove_variable = unlocked_resolution_$type$
+			}
+		}
+	}
+}
+
+international_organization_unlock_law_effect = {
+	custom_description = {
+		text = international_organization_unlock_law_effect_text
+		value = law:$type$
+		set_variable = {
+			name = unlocked_law_$type$
+			value = yes
+		}
+	}
+}
+international_organization_lock_law_effect = {
+	custom_description = {
+		text = international_organization_lock_law_effect_text
+		value = law:$type$
+		remove_variable = unlocked_law_$type$
+	}
+}
+
+international_organization_unlock_policy_effect = {
+	custom_description = {
+		text = international_organization_unlock_policy_effect_text
+		value = policy:$type$
+		set_variable = {
+			name = unlocked_policy_$type$
+			value = yes
+		}
+	}
+}
+international_organization_lock_policy_effect = {
+	custom_description = {
+		text = international_organization_lock_policy_effect_text
+		value = policy:$type$
+		remove_variable = unlocked_policy_$type$
+	}
+}
+
+apply_policy_voting_cooldown_effect = {
+	if = {
+		limit = { modifier:policy_vote_delay > 0 }
+		add_cooldown = {
+			type = io_policy_vote_active_cooldown
+			years = policy_voting_value
+		}
+	}
+}
+
+update_leader_country = {
+	hidden_effect = {
+		if = {
+			limit = { total_members > 0 }
+			ordered_international_organization_member = {
+				limit = { can_lead_international_organization = PREV }
+				order_by = great_power_score
+				max = 1
+				check_range_bounds = no
+				save_scope_as = potential_new_leader
+			}
+			if = {
+				limit = { international_organization_has_leader = no }
+				set_leader_country = scope:potential_new_leader
+			}
+			else_if = {
+				limit = { leader_country ?= { NOT = { this = scope:potential_new_leader } } }
+				set_leader_country = scope:potential_new_leader
+			}
+		}
+	}
+}
+
+gain_special_status_parliament_issue_support = {
+	if = {
+		limit = { has_ongoing_parliament_debate = yes }
+		custom_description = {
+			text = gain_special_status_parliament_issue_support_text
+			object = $special_status$
+			every_international_organization_member = {
+				limit = {
+					has_special_status_in_international_organization = {
+						type = $special_status$
+						international_organization = root
+					}
+					has_highest_rated_special_status_in_international_organization_of_type = {
+						type = $special_status$
+						international_organization = root
+					}
+				}
+				save_temporary_scope_as = member_scope
+				$special_status$ = {
+					save_temporary_scope_as = target_status
+				}
+			}
+		}
+	}
+}
+
+apply_modifier_on_all_members = {
+	custom_description = {
+		text = apply_modifier_on_all_members_text
+		value = $years$
+		every_international_organization_member = {
+			limit = { NOT = { is_leader_of_international_organization = prev } }
+			add_country_modifier = {
+				mode = add_and_extend
+				modifier = $modifier$
+				years = $years$
+			}
+		}
+	}
+	custom_tooltip = $tooltip$
+}
+apply_modifier_on_all_members_excluding_leader = {
+	custom_description = {
+		text = apply_modifier_on_all_members_excluding_leader_text
+		value = $years$
+		every_international_organization_member = {
+			limit = { NOT = { is_leader_of_international_organization = prev } }
+			add_country_modifier = {
+				mode = add_and_extend
+				modifier = $modifier$
+				years = $years$
+			}
+		}
+	}
+	custom_tooltip = $tooltip$
+}
+
+international_organization_unlock_parliament_issue_effect = {
+	custom_description = {
+		text = international_organization_unlock_parliament_issue_effect_text
+		value = parliament_issue:$type$
+		set_variable = {
+			name = unlocked_parliament_issue_$type$
+			value = yes
+		}
+	}
+}
+international_organization_lock_parliament_issue_effect = {
+	custom_description = {
+		text = international_organization_lock_parliament_issue_effect_text
+		value = parliament_issue:$type$
+		remove_variable = unlocked_parliament_issue_$type$
+	}
+}
+
+international_organization_unlock_parliament_agenda_effect = {
+	custom_description = {
+		text = international_organization_unlock_parliament_agenda_effect_text
+		value = parliament_agenda:$type$
+		set_variable = {
+			name = unlocked_parliament_agenda_$type$
+			value = yes
+		}
+	}
+}
+international_organization_lock_parliament_agenda_effect = {
+	custom_description = {
+		text = international_organization_lock_parliament_agenda_effect_text
+		value = parliament_agenda:$type$
+		remove_variable = unlocked_parliament_agenda_$type$
+	}
+}
+
+international_organization_unlock_parliament_type_effect = {
+	custom_description = {
+		text = international_organization_unlock_parliament_type_effect_text
+		value = parliament_type:$type$
+		set_variable = {
+			name = unlocked_parliament_type_$type$
+			value = yes
+		}
+	}
+}
+international_organization_lock_parliament_type_effect = {
+	custom_description = {
+		text = international_organization_lock_parliament_type_effect_text
+		value = parliament_type:$type$
+		remove_variable = unlocked_parliament_type_$type$
+	}
+}
+
+call_parliament_for_law_change = {
+	if = {
+		limit = {
+			exists = scope:recipient
+			exists = scope:vote
+			scope:recipient = {
+				uses_parliament_for_law_votes_trigger = yes
+			}
+		}
+		scope:recipient = {
+			#Setup parliament location
+			if = {
+				limit = { international_organization_type = international_organization_type:hre }
+				random_international_organization_member = {
+					limit = {
+						OR = {
+							has_special_status_in_international_organization = {
+								type = special_status:free_city
+								international_organization = PREV
+							}
+							has_special_status_in_international_organization = {
+								type = special_status:archbishop_elector
+								international_organization = PREV
+							}
+						}
+					}
+					capital ?= { save_scope_as = parliament_location }
+				}
+			}
+			else = {
+				if = {
+					limit = { exists = parliament_seat }
+					parliament_seat ?= {
+						save_scope_as = parliament_location
+					}
+				}
+				else_if = {
+					limit = {
+						scope:proposer = {
+							any_owned_location = {
+								is_owned_by_international_organization = scope:recipient
+							}
+						}
+					}
+					scope:proposer = {
+						if = {
+							limit = { capital ?= { is_owned_by_international_organization = scope:recipient } }
+							capital ?= {
+								save_scope_as = parliament_location
+							}
+						}
+						else = {
+							random_owned_location = {
+								limit = { is_owned_by_international_organization = scope:recipient }
+								save_scope_as = parliament_location
+							}
+						}
+					}
+				}
+				else = {
+					random_international_organization_owned_location = { save_scope_as = parliament_location }
+				}
+			}
+			set_parliament_location = scope:parliament_location
+			set_parliament_active = yes
+			set_parliament_issue = parliament_issue:hre_law_debate
+		}
+	}
+}
+
+recalculate_parliament_vote_for_law_change = {
+	hidden_effect = {
+		set_parliament_issue_support = 0
+		every_international_organization_member = {
+			unset_participated_in_parliament = scope:recipient
+			save_temporary_scope_as = voter
+			if = {
+				limit = {
+					scope:recipient = {
+						has_voted_for = {
+							voter = scope:voter
+							resolution = resolution:policy_vote
+							vote = scope:recipient.var:io_law_target
+						}
+					}
+				}
+				set_participated_in_parliament = { international_organization = scope:recipient vote = yes }
+			}
+			else_if = {
+				limit = {
+					scope:recipient = {
+						has_voted_for = {
+							voter = scope:voter
+							resolution = resolution:policy_vote
+							vote = scope:recipient.var:io_current_law
+						}
+					}
+				}
+				set_participated_in_parliament = { international_organization = scope:recipient vote = no }
+			}
+		}
+		change_parliament_issue_support = {
+			if = {
+				limit = { modifier:forbid_multiple_policies_vote = yes }
+				if = {
+					limit = {
+						has_variable = io_law_target
+						has_variable = io_current_law
+						votes_for_resolution = {
+							resolution = resolution:policy_vote
+							outcome = var:io_current_law
+							value > 0
+						}
+					}
+					value = "votes_for_resolution(resolution:policy_vote|var:io_law_target)"
+					divide = {
+						value = "votes_for_resolution(resolution:policy_vote|var:io_current_law)"
+						add = "votes_for_resolution(resolution:policy_vote|var:io_law_target)"
+					}
+				}
+				else = {
+					value = 1
+				}
+			}
+			else = {
+				value = "votes_for_resolution(resolution:policy_vote|var:io_law_target)"
+				divide = total_members
+			}
+		}
+	}
+}
+
+recalculate_parliament_vote_for_law_change_for_agenda = {
+	hidden_effect = {
+		if = {
+			limit = {
+				resolution_is_active = resolution:policy_vote
+				uses_parliament_for_law_votes_trigger = yes
+				has_ongoing_parliament_debate = yes
+			}
+			save_temporary_scope_as = recipient
+			set_parliament_issue_support = 0
+			every_international_organization_parliament_supporter = {
+				save_temporary_scope_as = voter
+				scope:recipient = {
+					change_parliament_issue_support = "scope:voter.vote_percentage_impact_in_resolution(scope:recipient|resolution:policy_vote)"
+					if = {
+						limit = {
+							NOT = { has_voted_for = { voter = scope:voter resolution = resolution:policy_vote vote = var:io_law_target } }
+						}
+						if = {
+							limit = {
+								NOT = { vote_is_locked = { voter = scope:voter resolution = resolution:policy_vote } }
+							}
+							set_vote = { voter = scope:voter resolution = resolution:policy_vote vote = var:io_law_target }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+apply_parliament_bribe = {
+	if = {
+		limit = {
+			exists = scope:recipient
+			exists = scope:target
+		}
+		scope:recipient = {
+			change_parliament_issue_support = {
+				add = {
+					desc = total_special_status_power_fraction
+					value = "special_status_power_fraction(scope:target|special_status:junior_partner)"
+				}
+			}
+		}
+		scope:target = { set_participated_in_parliament = { international_organization = scope:recipient } }
+	}
+}
+
+recalculate_union_parliament_issue_support = {
+	hidden_effect = {
+		if = {
+			limit = {
+				$io$ = { has_ongoing_parliament_debate = yes }
+			}
+			$io$ = {
+				set_parliament_issue_support = 0
+				every_international_organization_member = {
+					limit = {
+						has_participated_in_parliament = $io$
+						has_voted_for_issue_in_parliament = $io$
+					}
+					save_scope_as = target
+					$io$ = {
+						change_parliament_issue_support = {
+							add = {
+								desc = total_special_status_power_fraction
+								value = "special_status_power_fraction(scope:target|special_status:junior_partner)"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+cap_parliament_support = {
+	hidden_effect = {
+		if = {
+			limit = { parliament_issue_support > 1 }
+			set_parliament_issue_support = 1
+		}
+		if = {
+			limit = { parliament_issue_support < 0 }
+			set_parliament_issue_support = 0
+		}
+	}
+}
+
+participate_in_parliament = {
+	$international_organization$ = { save_temporary_scope_as = source_io }
+	save_temporary_scope_as = member_state
+	if = {
+		limit = { $vote$ = yes }
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_participated_in_parliament = scope:source_io }
+					NOT = { has_voted_for_issue_in_parliament = scope:source_io }
+				}
+			}
+			scope:source_io = {
+				change_parliament_issue_support = {
+					value = {
+						if = {
+							limit = { combined_special_status_power > 0 }
+							value = "scope:member_state.country_highest_rated_special_status_power(scope:source_io)"
+							divide = "combined_special_status_power"
+						}
+						else = { value = 0 }
+					}
+				}
+			}
+			set_participated_in_parliament = { international_organization = scope:source_io vote = yes }
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_participated_in_parliament = scope:source_io
+				has_voted_for_issue_in_parliament = scope:source_io
+			}
+			scope:source_io = {
+				change_parliament_issue_support = {
+					value = {
+						if = {
+							limit = { combined_special_status_power > 0 }
+							value = "scope:member_state.country_highest_rated_special_status_power(scope:source_io)"
+							divide = "combined_special_status_power"
+						}
+						else = { value = 0 }
+						multiply = -1
+					}
+				}
+			}
+			set_participated_in_parliament = { international_organization = scope:source_io vote = no }
+		}
+	}
+	hidden_effect = {
+		scope:source_io = {
+			cap_parliament_support = yes
+		}
+	}
+}
+
+propose_parliament_issue = {
+	$international_organization$ = {
+		if = {
+			limit = { has_variable = hre_diet_location }
+			var:hre_diet_location = { save_scope_as = parliament_location }
+		}
+		if = {
+			limit = { exists = scope:parliament_location }
+			set_parliament_location = scope:parliament_location
+		}
+		else = {
+			set_parliament_location = scope:actor.capital
+		}
+		set_parliament_active = yes
+		hidden_effect = {
+			every_international_organization_member = {
+				set_participated_in_parliament = { international_organization = $international_organization$ vote = no }	#the AI struggles too hard with the concept of voting "no" to things for some reason, so instead they all vote automatically against it on day 1
+			}
+		}
+		if = {
+			limit = { exists = scope:parliament_issue }
+			set_parliament_issue = scope:parliament_issue
+			set_parliament_issue_support = {
+				add = {
+					desc = total_special_status_power_fraction
+					value = "total_special_status_power_fraction(scope:parliament_issue.special_status)"
+				}
+			}
+		}
+	}
+	set_participated_in_parliament = { international_organization = $international_organization$ vote = yes }
+	hidden_effect = {
+		add_to_variable_list = {
+			name = io_parliaments_called_list
+			target = $international_organization$
+			days = 366
+		}
+	}
+}
+
+cast_vote = {
+	custom_description = {
+		text = cast_vote_text
+		subject = $voter$
+		object = $vote$
+		set_vote = {
+			voter = $voter$
+			resolution = $resolution$
+			vote = $vote$
+		}
+	}
+}
+
+#Created the scripted effects because it is not super intuitive that a country has to leave the vote empty to vote nothing / that an IO needs to end a vote with no vote target
+#Only usable for resolutions which allow a null object target
+abstain_vote = {
+	custom_description = {
+		text = abstain_vote_text
+		subject = $voter$
+		object = $resolution$
+		set_vote = {
+			voter = $voter$
+			resolution = $resolution$
+		}
+	}
+}
+
+fail_vote = {
+	end_vote = {
+		resolution = $resolution$
+	}
+}
+
+transfer_yearly_gold_from_all_members = {
+	custom_description = {
+		text = transfer_yearly_gold_from_all_members_text
+		value = $value$
+		object = $target$
+		every_international_organization_member = {
+			limit = { this != $target$ }
+			transfer_yearly_gold = {
+				value = $value$
+				target = $target$
+			}
+		}
+	}
+}
+
+transfer_yearly_manpower_from_all_members = {
+	custom_description = {
+		text = transfer_yearly_manpower_from_all_members_text
+		value = $value$
+		object = $target$
+		every_international_organization_member = {
+			limit = { this != $target$ }
+			transfer_yearly_manpower = {
+				value = $value$
+				target = $target$
+			}
+		}
+	}
+}
+
+#################################################
+# Personal Union International Organization		#
+#################################################
+apply_pu_supporters_estate_satisfaction_hit = {
+	custom_description = {
+		text = apply_pu_supporters_estate_satisfaction_hit_text
+		value = $value$
+		save_scope_as = target_io
+		if = {
+			limit = { resolution_is_active = resolution:policy_vote }
+			every_international_organization_member = {
+				limit = { scope:target_io = { has_voted_for = { voter = prev resolution = resolution:policy_vote vote = scope:vote } } }
+				add_estate_satisfaction = { type = estate_type:nobles_estate value = $value$ }
+				add_estate_satisfaction = { type = estate_type:clergy_estate value = $value$ }
+				add_estate_satisfaction = { type = estate_type:burghers_estate value = $value$ }
+			}
+		}
+	}
+}
+apply_pu_opponents_estate_satisfaction_hit = {
+	custom_description = {
+		text = apply_pu_opponents_estate_satisfaction_hit_text
+		value = $value$
+		save_scope_as = target_io
+		if = {
+			limit = { resolution_is_active = resolution:policy_vote }
+			every_international_organization_member = {
+				limit = { scope:target_io = { NOT = { has_voted_for = { voter = prev resolution = resolution:policy_vote vote = scope:vote } } } }
+				add_estate_satisfaction = { type = estate_type:nobles_estate value = $value$ }
+				add_estate_satisfaction = { type = estate_type:clergy_estate value = $value$ }
+				add_estate_satisfaction = { type = estate_type:burghers_estate value = $value$ }
+			}
+		}
+	}
+}
+apply_pu_estate_satisfaction_hit = {
+	apply_pu_$target$_estate_satisfaction_hit = { value = $value$ }
+}
+
+change_union_integration_level = {
+	hidden_effect = {
+		custom_description = {
+			text = change_union_integration_level_text
+			value = $value$
+			every_international_organization_member = {
+				if = {
+					limit = { NOT = { has_variable = integrated_in_union } }
+					set_variable = { name = integrated_in_union value = $value$ }
+				}
+				else = {
+					change_variable = { name = integrated_in_union add = $value$ }
+				}
+			}
+		}
+	}
+}
+
+clear_individual_integration_levels = {
+	hidden_effect = {
+		if = {
+			limit = { has_variable = integrated_in_union }
+			remove_variable = integrated_in_union
+		}
+	}
+}
+
+set_individual_integration_level = {
+	custom_description = {
+		text = set_individual_integration_level_text
+		value = $value$
+		object = $international_organization$
+		set_variable = {
+			name = integrated_in_union
+			value = $value$
+		}
+		if = {
+			limit = {
+				has_variable = integrated_in_union
+				var:integrated_in_union < 0
+			}
+			set_variable = {
+				name = integrated_in_union
+				value = 0
+			}
+		}
+	}
+}
+
+apply_union_levels = {
+	set_local_variable = {
+		name = union_levels
+		value = $level$
+	}
+	if = {
+		limit = { local_var:union_levels >= 1 }
+		add_policy_to_international_organization = policy:union_establish_seniority_policy
+	}
+	if = {
+		limit = { local_var:union_levels >= 2 }
+		add_policy_to_international_organization = policy:union_senior_succession_law
+	}
+	if = {
+		limit = { local_var:union_levels >= 3 }
+		add_policy_to_international_organization = policy:union_unified_treasury_policy
+	}
+	if = {
+		limit = { local_var:union_levels >= 4 }
+		add_policy_to_international_organization = policy:union_unified_external_diplomacy_policy
+	}
+	if = {
+		limit = { local_var:union_levels >= 5 }
+		add_policy_to_international_organization = policy:union_aligned_legislature_policy
+	}
+	#Same law
+	if = {
+		limit = { local_var:union_levels = 6 }
+		add_policy_to_international_organization = policy:union_crown_unification_policy
+	}
+	else_if = {
+		limit = { local_var:union_levels = 7 }
+		add_policy_to_international_organization = policy:union_swift_crown_unification_policy
+	}
+	else_if = {
+		limit = { local_var:union_levels = 8 }
+		add_policy_to_international_organization = policy:union_rapid_crown_unification_policy
+	}
+	remove_local_variable = union_levels
+}
+
+apply_same_inheritance_policy_effect = {
+	custom_tooltip = {
+		text = union_codified_inheritance_policy_at
+		ordered_country_with_special_status_of_type = {
+			type = senior_partner
+			limit = {
+				succession_law = {
+					NOT = { is_locked_for = prev }
+					NOT = { has_tag = cannot_be_transferred }
+				}
+			}
+			order_by = great_power_score
+			check_range_bounds = no
+			max = 1
+			succession_law ?= { save_scope_as = target_heir_selection }
+		}
+		if = {
+			limit = { exists = scope:target_heir_selection }
+			every_international_organization_member = {
+				limit = {
+					government_type = government_type:monarchy
+					succession_law = { NOT = { is_locked_for = prev } }
+					NOT = {
+						has_special_status_in_international_organization = {
+							type = special_status:senior_partner
+							international_organization = prev
+						}
+					}
+					has_union_integration_level_as_union = yes
+				}
+				change_heir_selection = scope:target_heir_selection
+			}
+		}
+	}
+	custom_tooltip = union_codified_inheritance_policy_bt
+}
+apply_same_laws_policy_effect = {
+	custom_tooltip = {
+		text = union_aligned_legislature_policy_at
+		ordered_country_with_special_status_of_type = {
+			type = senior_partner
+			order_by = great_power_score
+			check_range_bounds = no
+			max = 1
+			every_current_reforms = { add_to_temporary_list = reforms_list }
+			every_current_policy = { add_to_temporary_list = policy_list }
+			save_scope_as = leader_scope
+		}
+		every_international_organization_member = {
+			limit = {
+				NOT = {
+					has_special_status_in_international_organization = {
+						type = special_status:senior_partner
+						international_organization = prev
+					}
+				}
+			}
+			save_temporary_scope_as = target_country
+			every_current_reforms = {
+				limit = {
+					is_unique_reform = no
+					is_major_reform = no
+					is_implementable_in = scope:leader_scope
+				}
+				scope:target_country = { remove_reform = PREV }
+			}
+			every_in_list = {
+				list = reforms_list
+				if = {
+					limit = {
+						NOT = { is_fully_implemented_in = scope:target_country }
+						is_implementable_in = scope:target_country
+						scope:target_country.num_open_reform_slots > 0
+					}
+					scope:target_country = { add_reform = PREV }
+				}
+			}
+			every_current_policy = {
+				limit = {
+					is_implementable_in = scope:leader_scope
+				}
+				scope:target_country = { remove_policy = PREV }
+			}
+			every_in_list = {
+				list = policy_list
+				if = {
+					limit = {
+						NOT = { is_fully_implemented_in = scope:target_country }
+						is_implementable_in = scope:target_country
+						law = {
+							NOT = { is_fully_implemented_in = scope:target_country }
+							is_implementable_in = scope:target_country
+						}
+					}
+					scope:target_country = { add_policy = PREV }
+				}
+			}
+		}
+	}
+}
+apply_all_union_policy_effects = {
+	save_temporary_scope_value_as = {
+		name = union_law_level
+		value = $level$
+	}
+	if = {
+		limit = { exists = scope:union_law_level }
+		if = {
+			limit = { scope:union_law_level >= UNION_SAME_INHERITANCE_LEVEL }
+			apply_same_inheritance_policy_effect = yes
+		}
+		if = {
+			limit = { scope:union_law_level >= UNION_SAME_LAWS_LEVEL }
+			apply_same_laws_policy_effect = yes
+		}
+	}
+}
+
+on_union_policy_change_effect = {
+	#hidden_effect = {
+	#	add_cooldown = {
+	#		type = union_recent_policy_change_cd
+	#		years = 5
+	#	}
+	#}
+}
+
+create_union_of_level = {
+	custom_description = {
+		text = create_union_of_level_text
+		object = $target$
+		value = $level$
+		if = {
+			limit = { NOT = { in_union_with = $target$ } }
+			create_union = $target$
+			union ?= { apply_union_levels = { level = $level$ } }
+		}
+		else_if = {
+			limit = { union ?= { modifier:union_integration_level < $level$ } }
+			union = { apply_union_levels = { level = $level$ } }
+		}
+	}
+}
+
+set_senior_partner = {
+	if = {
+		limit = { exists = union }
+		custom_description = {
+			text = set_senior_partner_text
+			save_scope_as = new_senior_partner
+			add_cooldown = {
+				type = take_over_seniority
+				years = 25
+			}
+			union = {
+				if = {
+					limit = { modifier:union_integration_level < 1 }
+					apply_union_levels = { level = 1 }
+				}
+				every_country_with_special_status_of_type = {
+					type = senior_partner
+					union = {
+						international_organization_remove_special_status = {
+							type = special_status:senior_partner
+							country = prev
+						}
+					}
+				}
+				international_organization_add_special_status = {
+					type = special_status:senior_partner
+					country = scope:new_senior_partner
+				}
+				set_variable = {
+					name = union_senior_partner
+					value = scope:new_senior_partner
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = union_ruler_character }
+						scope:new_senior_partner = { has_ruler = yes }
+					}
+					set_variable = {
+						name = union_ruler_character
+						value = scope:new_senior_partner.ruler
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_variable = union_heir_character }
+						scope:new_senior_partner = { has_heir = yes }
+					}
+					set_variable = {
+						name = union_heir_character
+						value = scope:new_senior_partner.ruler
+					}
+				}
+				if = {
+					limit = {
+						has_variable = union_ruler_character
+						var:union_ruler_character = {
+							is_alive = yes
+							NOT = { owner = prev.var:union_senior_partner }
+						}
+					}
+					var:union_ruler_character = { move_country = scope:new_senior_partner }
+				}
+				if = {
+					limit = {
+						has_variable = union_heir_character
+						var:union_heir_character = {
+							is_alive = yes
+							NOT = { owner = prev.var:union_senior_partner }
+						}
+					}
+					var:union_heir_character = { move_country = scope:new_senior_partner }
+				}
+			}
+		}
+	}
+}
+

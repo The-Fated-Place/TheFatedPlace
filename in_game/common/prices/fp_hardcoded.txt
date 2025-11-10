@@ -1,0 +1,23 @@
+join_cult = {
+	stability = 20
+}
+
+disfavor_cult = {
+	legitimacy = 10
+}
+
+stop_disfavoring_cult = {
+	legitimacy = 10
+}
+
+promote_cult = {
+	prestige = 10
+}
+
+stop_promoting_cult = {
+	prestige = 10
+}
+
+leave_cult = {
+	stability = 10
+}
