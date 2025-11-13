@@ -10,6 +10,15 @@ wasteland7 = abdda4
 wasteland8 = 66c2a5
 wasteland9 = 3288bd
 wasteland10 = 5e4fa2
+mountains1 = 5e4fa2
+mountains2 = 7056e4
+mountains3 = 280ea1
+mountains4 = beb2f3
+seas1 = 3288bd
+seas2 = 0c659b
+seas3 = 0a9cf6
+seas4 = 64bbf1
+seas5 = 194662
 
 wasteland_blocker = 1E0F0D
 

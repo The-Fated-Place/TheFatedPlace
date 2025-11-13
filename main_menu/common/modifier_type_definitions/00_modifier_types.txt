@@ -18,11 +18,9 @@
 ## mod
 local_mannan_presence={
     percent=yes
-    game_data={
-        category=location
+    game_data= {
+        category = location
     }
-    min=0
-    max = 100
 }
 
 

@@ -8,7 +8,7 @@ international_organization_manager = {
         laws = {
             manaan_policy
         }
-        icon = tiantai_buddhism
+        icon = cult_icon_manaan
         variables = {
             cult_favor = 30
             religion = religion:imperial_cults

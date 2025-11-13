@@ -17,4 +17,13 @@ wasteland7 = { topography = flatland_wasteland vegetation = woods climate = arct
 wasteland8 = { topography = flatland_wasteland vegetation = woods climate = arctic}
 wasteland9 = { topography = flatland_wasteland vegetation = woods climate = arctic}
 wasteland10 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+mountains1 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+mountains2 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+mountains3 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+mountains4 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+seas1 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+seas2 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+seas3 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+seas4 = { topography = flatland_wasteland vegetation = woods climate = arctic}
+seas5 = { topography = flatland_wasteland vegetation = woods climate = arctic}
 wasteland_blocker = { topography = flatland_wasteland vegetation = woods climate = arctic}

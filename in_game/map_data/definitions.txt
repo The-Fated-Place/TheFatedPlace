@@ -284,6 +284,15 @@
 					wasteland9
 					wasteland10
 					wasteland_blocker
+                    mountains1
+                    mountains2
+                    mountains3
+                    mountains4
+                    seas1
+                    seas2
+                    seas3
+                    seas4
+                    seas5
 				}
 			}
 			
