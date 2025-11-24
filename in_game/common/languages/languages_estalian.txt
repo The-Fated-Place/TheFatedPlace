@@ -1,0 +1,418 @@
+﻿language_estalian = {
+	color = map_CAS
+	family = language_estalian_family
+
+	# 120 shared core male names — the most common and unmistakably “Estalian” across all dialects
+	male_names = {
+		name_acuna
+		name_agustin
+		name_alfonso
+		name_alfredo
+		name_alonso
+		name_alvaro
+		name_amadis
+		name_amato
+		name_andres
+		name_anton
+		name_antonio
+		name_aquila
+		name_arderique
+		name_baltasar
+		name_bartolome
+		name_benito
+		name_berenguel
+		name_bernardo
+		name_blas
+		name_bravo
+		name_carlos
+		name_caton
+		name_cifar
+		name_ciro
+		name_claribalte
+		name_colon
+		name_cordoza
+		name_cortega
+		name_cristobal
+		name_devante
+		name_diego
+		name_domingo
+		name_durandarte
+		name_emilio
+		name_enrique
+		name_esplandian
+		name_esteban
+		name_esteban
+		name_facundo
+		name_felipe
+		name_fernando
+		name_ferrera
+		name_ferrigo
+		name_florambel
+		name_floriseo
+		name_frisco
+		name_frutos
+		name_galba
+		name_galindo
+		name_galvo
+		name_garci
+		name_gaspar
+		name_geraldo
+		name_giacinto
+		name_gil
+		name_gines
+		name_giraldo
+		name_gomez
+		name_gonzalo
+		name_gregorio
+		name_guillen
+		name_guillermo
+		name_gutierre
+		name_guzman
+		name_hector
+		name_hernando
+		name_isidro
+		name_jaime
+		name_javier
+		name_jeronimo
+		name_jose
+		name_juan
+		name_juancarlos
+		name_julian
+		name_leoleno
+		name_leon
+		name_lisuarte
+		name_lope
+		name_lorenzo
+		name_luis
+		name_macario
+		name_manrique
+		name_manuel
+		name_martin
+		name_mateo
+		name_matias
+		name_melchor
+		name_mendo
+		name_mendoza
+		name_miguel
+		name_morgante
+		name_muno
+		name_nardo
+		name_noe
+		name_nuno
+		name_olivante
+		name_olivar
+		name_ordono
+		name_ortega
+		name_pablo
+		name_pedro
+		name_pelayo
+		name_pinzon
+		name_raimundo
+		name_ramiro
+		name_renaldo
+		name_ricardo
+		name_rodrigo
+		name_rogelio
+		name_salvador
+		name_sancho
+		name_santiago
+		name_santos
+		name_sebastian
+		name_simon
+		name_tajo
+		name_tajon
+		name_tello
+		name_tomas
+		name_torquemado
+		name_vargas
+		name_velasco
+		name_vermudo
+		name_vidal
+		name_vizuarte
+		name_yago
+		name_zenon
+	}
+
+	# 120 shared core female names — the most common and unmistakably “Estalian” across all dialects
+	female_names = {
+		name_agueda
+		name_alameda
+		name_aldonza
+		name_alduara
+		name_alegria
+		name_alida
+		name_alita
+		name_alva
+		name_ana
+		name_anderquina
+		name_andregoto
+		name_antonia
+		name_ava
+		name_barbola
+		name_beatriz
+		name_belinda
+		name_berenguela
+		name_blanca
+		name_breezy
+		name_brigida
+		name_clara
+		name_conchita
+		name_constanza
+		name_corazon
+		name_costanza
+		name_cristina
+		name_dalia
+		name_damiana
+		name_damita
+		name_drina
+		name_duena
+		name_dulce
+		name_eldora
+		name_elena
+		name_elvira
+		name_emilia
+		name_ermengarda
+		name_ermesinda
+		name_eslonza
+		name_esmeralda
+		name_estefania
+		name_eulalia
+		name_eva
+		name_eylo
+		name_floriana
+		name_francisca
+		name_fronilda
+		name_fuensanta
+		name_gaudiosa
+		name_gitana
+		name_godo
+		name_gontroda
+		name_gotina
+		name_guina
+		name_guiomar
+		name_herminia
+		name_ines
+		name_isabel
+		name_jacinda
+		name_jade
+		name_jeronima
+		name_jimena
+		name_juana
+		name_juliana
+		name_justa
+		name_kesare
+		name_leonor
+		name_liani
+		name_lola
+		name_lopa
+		name_lucia
+		name_luisa
+		name_lujuana
+		name_mafalda
+		name_magdalena
+		name_mandy
+		name_manuela
+		name_margarita
+		name_maria
+		name_marina
+		name_marquesa
+		name_matrona
+		name_mayor
+		name_melisenda
+		name_mencia
+		name_mercedes
+		name_milia
+		name_mireya
+		name_mora
+		name_muna
+		name_munadona
+		name_neva
+		name_nicor
+		name_nina
+		name_onega
+		name_patia
+		name_petronila
+		name_pilar
+		name_raeka
+		name_ria
+		name_rosa
+		name_sancha
+		name_sandia
+		name_savannah
+		name_sol
+		name_soledad
+		name_susana
+		name_tegridia
+		name_teresa
+		name_tia
+		name_toda
+		name_urraca
+		name_ursula
+		name_usenda
+		name_valentina
+		name_varela
+		name_velasquita
+		name_verena
+		name_vianca
+		name_violante
+		name_viscavlara
+		name_xiomara
+		name_zerlina
+	}
+
+	dynasty_names = {
+	}
+
+	lowborn = {
+	}
+
+	ship_names = {
+	}
+
+	patronym_suffix_son = "patronym_suffix_spanish_son"
+	patronym_suffix_daughter = "patronym_suffix_spanish_daughter"
+
+	location_prefix = "location_prefix_spanish"
+
+	dialects = {
+		language_estalian_astur = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_estalian_western = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_estalian_norteno = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_estalian_obregonese = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_estalian_comarcano = {
+			male_names = {
+				name_ademar
+				name_aimerin
+				name_amaurin
+				name_amedez
+				name_ancelmes
+				name_artau
+				name_aznar
+				name_barral
+				name_bermond
+				name_bernat
+				name_borel
+				name_centules
+				name_clamenc
+				name_davi
+				name_dat
+				name_dodon
+				name_doumenge
+				name_duran
+				name_ebles
+				name_ermengau
+				name_folquet
+				name_gausbert
+				name_girvais
+				name_guitart
+				name_jacme
+				name_jaufret
+				name_marcau
+				name_matfre
+				name_milo
+				name_miquel
+				name_odon
+				name_otton
+				name_peire
+				name_peranudet
+				name_ponc
+				name_rainaut
+				name_sancho
+				name_tierri
+				name_berenguier
+				name_gaucelin
+				name_gelduin
+				name_guiges
+				name_humberto
+				name_lotaro
+				name_manasses
+				name_orson
+				name_rorgon
+				name_savary
+				name_sigismond
+				name_thiebaut
+			}
+			female_names = {
+				name_adalmode
+				name_alienor
+				name_arsinde
+				name_aurengarde
+				name_belleassez
+				name_bourguigne
+				name_esclarmonde
+				name_euphrosine
+				name_gerberge
+				name_gisele
+				name_guillaumette
+				name_helvis
+				name_hodierne
+				name_mahaut
+				name_mascarose
+				name_melisende
+				name_melusine
+				name_peronelle
+				name_pernelle
+				name_perinne
+				name_pernette
+				name_plaisance
+				name_sarrazine
+				name_solene
+				name_stephanie
+				name_sybille
+				name_tiburge
+				name_valence
+				name_yolande
+				name_adele
+				name_agnes
+				name_almodis
+				name_amelie
+				name_antoinette
+				name_aude
+				name_beatrix
+				name_bonne
+				name_bourgogne
+				name_cecile
+				name_charlotte
+				name_denise
+				name_douce
+				name_echive
+				name_eglantine
+				name_elisabeth
+				name_ermessinde
+				name_eustachie
+				name_heloise
+				name_azalaïs
+				name_brandimena
+				name_faïdida
+				name_garcenda
+				name_gersenda
+			}
+		}
+		language_estalian_tigarrese = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+	}
+}

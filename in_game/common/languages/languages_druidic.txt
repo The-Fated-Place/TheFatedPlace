@@ -1,0 +1,22 @@
+﻿languages_druidic = {
+	color = map_IRE
+
+	family = language_druidic_family
+
+	fallback = language_albion
+
+	male_names = {
+
+	}
+	female_names = {
+
+	}
+	dynasty_names = {
+	}
+	lowborn = {
+	}
+	ship_names = {
+	}
+
+	#dialects = {}	#Maybe.... i don't know
+}

@@ -1,0 +1,60 @@
+# avoid naming the same as Cultures and Languages
+
+#Human
+human_group = {}
+    albion_group = {}
+    bretonnian_group = {}
+    estalian_group = {}
+    imperial_group = {}
+    kislevite_group = {}
+        gospodar_group = {}
+        ungol_group = {}
+    tilean_group = {}
+        sartosan_group = {}
+    norscan_group = {}
+        norscan_northern_group = {}
+        norscan_southern_group = {}
+
+#TODO
+    amazon_group = {}
+    arabyan_group = {}
+    hung_group = {}
+    kurgan_group = {}
+    lahmian_group = {}
+    nehekharan_group = {}
+    oriental_group = {}
+    southlander_group = {}
+    strigany_group = {}
+
+#Dwarf
+dwarf_group = {}
+    dwarf_khazalid_group = {}
+        dwarf_norse_group = {}
+    dawrf_chaos_group = {}
+
+#Elf
+elf_group = {}
+    asrai_group = {}
+    asur_group = {}
+    druchi_group = {}
+
+
+#Halfling
+halfling_group = {}
+    halfling_lustrian = {}  #Not used
+    halfling_old_world = {} #Not used
+
+#Greenskin #TODO
+greenskin = {}
+    goblin_group = {}
+    orc_group = {}
+
+#Others #TODO
+beastman_group = {}
+daemonic_group = {}
+fimir_group = {}
+forest_group = {}
+lizardman_group = {}
+ogre_group = {}
+skaven_group = {}
+

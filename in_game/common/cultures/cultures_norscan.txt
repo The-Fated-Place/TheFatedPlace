@@ -1,0 +1,250 @@
+#Norscan
+
+norscan_aesling = {
+    language = language_norscan_aesling
+
+    color = map_aesling
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_baersonling = negative
+        norscan_bjornling   = negative
+        norscan_graeling    = positive
+        norscan_sarl        = negative
+        norscan_skaeling    = positive
+        norscan_varg        = positive
+        norscan_kuldevinder = neutral
+        norscan_skeggi      = negative
+        norscan_buttigen    = neutral
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_northern_group
+    }
+}
+
+norscan_baersonling = {
+    language = language_norscan_baersonling
+
+    color = map_baersonling
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = negative
+        norscan_bjornling   = positive
+        norscan_graeling    = neutral
+        norscan_sarl        = positive
+        norscan_skaeling    = neutral
+        norscan_varg        = neutral
+        norscan_kuldevinder = neutral
+        norscan_skeggi      = positive
+        norscan_buttigen    = negative
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_southern_group
+    }
+}
+
+norscan_bjornling = {
+    language = language_norscan_bjornling
+
+    color = map_bjornling
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = negative
+        norscan_baersonling = positive
+        norscan_graeling    = negative
+        norscan_sarl        = positive
+        norscan_skaeling    = negative
+        norscan_varg        = negative
+        norscan_kuldevinder = negative
+        norscan_skeggi      = positive
+        norscan_buttigen    = negative
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_southern_group
+    }
+}
+
+norscan_graeling = {
+    language = language_norscan_graeling
+
+    color = map_graeling
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = positive
+        norscan_baersonling = neutral
+        norscan_bjornling   = negative
+        norscan_sarl        = positive
+        norscan_skaeling    = positive
+        norscan_varg        = kindred
+        norscan_kuldevinder = neutral
+        norscan_skeggi      = negative
+        norscan_buttigen    = negative
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_northern_group
+    }
+}
+
+norscan_sarl = {
+    language = language_norscan_sarl
+
+    color = map_sarl
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = negative
+        norscan_baersonling = positive
+        norscan_bjornling   = positive
+        norscan_graeling    = positive
+        norscan_skaeling    = positive
+        norscan_varg        = positive
+        norscan_kuldevinder = neutral
+        norscan_skeggi      = neutral
+        norscan_buttigen    = enemy
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_southern_group
+    }
+}
+
+norscan_skaeling = {
+    language = language_norscan_skaeling
+
+    color = map_skaeling
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = positive
+        norscan_baersonling = neutral
+        norscan_bjornling   = negative
+        norscan_graeling    = positive
+        norscan_sarl        = positive
+        norscan_varg        = positive
+        norscan_kuldevinder = positive
+        norscan_skeggi      = negative
+        norscan_buttigen    = negative
+    }
+   culture_groups = {
+        human_group
+        norscan_group
+        norscan_southern_group
+    }
+}
+
+norscan_varg = {
+    language = language_norscan_varg
+
+    color = map_varg
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = positive
+        norscan_baersonling = neutral
+        norscan_bjornling   = negative
+        norscan_graeling    = kindred
+        norscan_sarl        = positive
+        norscan_skaeling    = positive
+        norscan_kuldevinder = neutral
+        norscan_skeggi      = negative
+        norscan_buttigen    = negative
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+        norscan_northern_group
+    }
+}
+
+norscan_kuldevinder = {
+    language = language_norscan_kuldevinder
+
+    color = map_kuldevind
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = neutral
+        norscan_baersonling = neutral
+        norscan_bjornling   = negative
+        norscan_graeling    = neutral
+        norscan_sarl        = neutral
+        norscan_skaeling    = positive
+        norscan_varg        = neutral
+        norscan_skeggi      = neutral
+        norscan_buttigen    = neutral
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+    }
+}
+
+norscan_skeggi = {
+    language = language_norscan_skeggi
+
+    color = map_skeggi
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx lustrian_gfx }
+
+    opinions = {
+        norscan_aesling     = negative
+        norscan_baersonling = positive
+        norscan_bjornling   = positive
+        norscan_graeling    = negative
+        norscan_sarl        = neutral
+        norscan_skaeling    = negative
+        norscan_varg        = negative
+        norscan_kuldevinder = neutral
+        norscan_buttigen    = negative
+    }
+    culture_groups = {
+        human_group
+        norscan_group
+    }
+}
+
+#May not be used
+norscan_buttigen = {
+    language = language_norscan_sarl
+
+    color = map_buttigen
+
+    tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        norscan_aesling     = negative
+        norscan_baersonling = negative
+        norscan_bjornling   = negative
+        norscan_graeling    = negative
+        norscan_sarl        = positive	#We're Sarl also
+        norscan_skaeling    = negative
+        norscan_varg        = negative
+        norscan_kuldevinder = negative
+        norscan_skeggi      = negative
+    }
+   culture_groups = {
+        human_group
+        norscan_group
+        norscan_southern_group
+    }
+}

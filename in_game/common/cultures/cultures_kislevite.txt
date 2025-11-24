@@ -1,0 +1,56 @@
+#Kislevite
+
+kislevite_gospodar = {   # Southern & city Gospodars – Erengrad, Kislev-city, Altdorf-educated boyars
+    language = language_kislevite_gospodar # spoken in Kislev-city, Erengrad, and the royal court
+
+    color = map_gospodar
+
+    tags = { russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+    opinions = {
+        kislev_ungol = positive
+        kislev_ropsmann = negative
+    }
+
+    culture_groups = {
+        human_group
+        kislevite_group
+        gospodar_group
+    }
+}
+kislevite_ungol = {   # Northern steppe tribes – fully part of Kislev now, but remember who was here first
+    language = language_kislevite_ungol # horse-archer dialect of the northern oblasts
+
+    color = map_ungol
+
+    tags = { russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+    opinions = {
+        kislev_gospodar = neutral     # respect the Tzar, but centuries of being second-class citizens sting
+        kislev_ropsmann = positive    # same horse-nomad roots
+    }
+
+    culture_groups = {
+        human_group
+        kislevite_group
+        ungol_group
+    }
+}
+kislevite_ropsmann = {   # Far-northern tundra herders & traders, still a little Chaos-y
+    language = language_kislevite_ropsmann # very Norse-sounding and influenced with lots of lone words
+
+    color = map_ropsmann
+
+    tags = { russian_gfx east_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+    opinions = {
+        kislev_gospodar = negative    # southern snobs who tax them and send priests
+        kislev_ungol = positive
+    }
+
+    culture_groups = {
+        human_group
+        kislevite_group
+        ungol_group
+    }
+}

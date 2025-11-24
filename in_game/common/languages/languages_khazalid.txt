@@ -1,0 +1,366 @@
+﻿language_khazalid = {
+	color = map_SCO											#Placehoder
+	family = language_khazalid_family
+
+	male_names = {
+		name_agnar
+		name_alaric
+		name_aldin
+		name_aldrun
+		name_algrim
+		name_alric
+		name_alrik
+		name_bael
+		name_baldrick
+		name_balgor
+		name_balik
+		name_balin
+		name_baragor
+		name_bardin
+		name_barik
+		name_barin
+		name_belegar
+		name_belgar
+		name_belm
+		name_borin
+		name_borm
+		name_borri
+		name_bragni
+		name_brand
+		name_brandur
+		name_brogar
+		name_brokk
+		name_brokki
+		name_bronn
+		name_budrik
+		name_cranneg
+		name_dadrin
+		name_daled
+		name_damin
+		name_darmon
+		name_dimgol
+		name_dimzad
+		name_dolgr
+		name_dorin
+		name_drakk
+		name_droki
+		name_drong
+		name_durak
+		name_durgin
+		name_durin
+		name_dwalin
+		name_eadric
+		name_einar
+		name_falgrim
+		name_falstad
+		name_farin
+		name_fundin
+		name_gadrin
+		name_garag
+		name_gargrim
+		name_gimli
+		name_gorek
+		name_gorim
+		name_gorm
+		name_gotrek
+		name_gottri
+		name_grim
+		name_grimnir
+		name_grimgor
+		name_grimli
+		name_grodrik
+		name_grom
+		name_grond
+		name_gror
+		name_grumni
+		name_grundi
+		name_hadrin
+		name_hargrim
+		name_harkaz
+		name_kadrin
+		name_kazador
+		name_kazrik
+		name_kragdin
+		name_kragg
+		name_logan
+		name_lokki
+		name_magnund
+		name_malakai
+		name_morgrim
+		name_morgund
+		name_narvi
+		name_norgrim
+		name_okri
+		name_rogrin
+		name_sindri
+		name_snorri
+		name_thorek
+		name_thorgrim
+		name_thorin
+		name_thrain
+		name_thror
+		name_ulrik
+		name_urist
+		name_valaz
+		name_zarador
+		name_zirak
+	}
+
+	female_names = {
+		name_alaera
+		name_alrika
+		name_astrid
+		name_balarika
+		name_belikina
+		name_belgrina
+		name_berta
+		name_bonni
+		name_bredna
+		name_brenwyn
+		name_bricla
+		name_brondra
+		name_brylla
+		name_bryngwen
+		name_dagni
+		name_dara
+		name_derna
+		name_dis
+		name_doralina
+		name_dunhilda
+		name_fenna
+		name_freda
+		name_friga
+		name_gamira
+		name_gerta
+		name_gretta
+		name_grimilda
+		name_grondella
+		name_gruna
+		name_gunda
+		name_gwenna
+		name_gwina
+		name_helga
+		name_helgar
+		name_hergar
+		name_hilda
+		name_honni
+		name_hunni
+		name_kalea
+		name_karga
+		name_karrina
+		name_katlin
+		name_katrin
+		name_kella
+		name_kemma
+		name_kragella
+		name_lakin
+		name_lina
+		name_magda
+		name_maniver
+		name_menni
+		name_merrin
+		name_misti
+		name_modra
+		name_moira
+		name_morga
+		name_nadda
+		name_nioma
+		name_nissa
+		name_olka
+		name_raena
+		name_reyna
+		name_rudra
+		name_shelbi
+		name_sifna
+		name_sigrid
+		name_sigrun
+		name_skorina
+		name_solveig
+		name_sorka
+		name_suni
+		name_tharma
+		name_thindra
+		name_throlin
+		name_tiza
+		name_tossa
+		name_trunni
+		name_ulla
+		name_vala
+		name_valma
+		name_vanyra
+		name_vidra
+		name_voignar
+		name_wenna
+		name_winnifer
+		name_yani
+		name_yanni
+		name_ysabrylla
+		name_ysolla
+		name_ysulyan
+		name_zargona
+		name_zylra
+	}
+
+	dynasty_names = {
+	}
+
+	lowborn = {
+	}
+
+	ship_names = {
+	}
+
+	patronym_prefix_son = "patronym_prefix_scots_son"		#Placehoder
+	patronym_prefix_daughter = "patronym_prefix_scots_son"	#Placehoder
+
+	dynasty_template_keys = {								#Placehoder
+		SOMEONE_OF_SOMEWHERE
+		SOMEONE_FROM_SOMEWHERE
+		SOMEONE_THE_SOMETHING_OF_SOMEWHERE__TYPE
+		SOMEONE_THE_SOMEDESC_SOMETHING__ADJ_TYPE
+		SOMEONE_THE_SOMELOCALITY_SOMETHING__TYPE
+		SOMEONE_THE_SOMENATIONALITY_SOMETHING__TYPE
+	}
+
+	location_prefix = "location_prefix_english"				#Placehoder
+	descendant_prefix = "descendant_prefix_english"			#Placehoder
+
+	dialects = {
+		language_khazalid_standard = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_khazalid_southron = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_khazalid_norse = {
+			male_names = {
+				name_aegir
+				name_alviss
+				name_andvari
+				name_aurvandil
+				name_bafur
+				name_billingr
+				name_bolthorn
+				name_dvalin
+				name_eitri
+				name_fafnir
+				name_fjolnir
+				name_gagnrad
+				name_geirrod
+				name_haptagud
+				name_hermod
+				name_himinhrjot
+				name_hnikar
+				name_hymir
+				name_ivaldi
+				name_kvasir
+				name_lit
+				name_lodur
+				name_modi
+				name_nabbi
+				name_njord
+				name_nyrad
+				name_othr
+				name_radsvinn
+				name_regin
+				name_skirpir
+				name_suttung
+				name_thiassi
+				name_thjalfi
+				name_thrudgelmir
+				name_tvisto
+				name_ullr
+				name_vafthruthnir
+				name_vali
+				name_vidar
+				name_vili
+				name_ymir
+				name_fjalar
+				name_gilling
+				name_hlebard
+				name_hrimthurs
+				name_mimir
+				name_skuld
+				name_thrud
+				name_verdandi
+				name_vor
+			}
+			female_names = {
+				name_angrboda
+				name_bestla
+				name_bylgja
+				name_eir
+				name_fenja
+				name_freja
+				name_gefjon
+				name_gersemi
+				name_gjalp
+				name_gna
+				name_grid
+				name_gullveig
+				name_heid
+				name_herfjotur
+				name_himinglava
+				name_hnoss
+				name_hyndla
+				name_idun
+				name_jarnsaxa
+				name_jord
+				name_kara
+				name_kolga
+				name_laufey
+				name_mengloth
+				name_nanna
+				name_nott
+				name_randgridr
+				name_rind
+				name_roskva
+				name_saga
+				name_sif
+				name_sigyn
+				name_sjofn
+				name_skadi
+				name_skuld
+				name_snotra
+				name_thrud
+				name_urdhr
+				name_verdandi
+				name_vor
+				name_walburga
+				name_frigg
+				name_hilda
+				name_huldra
+				name_nerthus
+				name_sinmara
+				name_embla
+				name_gudr
+				name_hildeberg
+			}
+		}
+		language_khazalid_varr = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_khazalid_dum = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_khazalid_zharr = {
+			male_names = {
+			}
+			female_names = {
+			}
+		}
+		language_arcane_dwarf = {}
+	}
+}

@@ -1,0 +1,97 @@
+#Albion
+
+albion_fenian = {   # central & eastern marshes
+    language = language_albion_fenian # language or dialect
+
+    color = map_fenian
+
+    tags = { irish_gfx gaelic_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        albion_bogmorian = kindred
+        albion_kernow = negative
+        albion_oghamic = positive
+        albion_innish = neutral
+    }
+
+    culture_groups = {
+        human_group
+        albion_group
+    }
+}
+albion_bogmorian = {    # western swamps and coast
+    language = language_albion_bogmorian # language or dialect
+
+    color = map_bogmorian
+
+    tags = { irish_gfx gaelic_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        albion_fenian = kindred
+        albion_kernow = negative
+        albion_oghamic = neutral
+        albion_innish = positive
+    }
+
+    culture_groups = {
+        human_group
+        albion_group
+    }
+}
+albion_kernow = {   # northern mountains and highlands
+    language = language_albion_kernow # language or dialect
+
+    color = map_kernow
+
+    tags = { irish_gfx gaelic_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        albion_fenian = negative
+        albion_bogmorian = negative
+        albion_oghamic = negative
+        albion_innish = neutral
+    }
+
+    culture_groups = {
+        human_group
+        albion_group
+    }
+}
+albion_oghamic = {  # central plateau + Citadel area
+    language = language_albion_oghamic # language or dialect
+
+    color = map_oghamic
+
+    tags = { irish_gfx gaelic_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        albion_fenian = positive
+        albion_bogmorian = neutral
+        albion_kernow = negative
+        albion_innish = negative
+    }
+
+    culture_groups = {
+        human_group
+        albion_group
+    }
+}
+albion_innish = {   # people of the Isles
+    language = language_albion_innish # language or dialect
+
+    color = map_innish
+
+    tags = { irish_gfx gaelic_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+    opinions = {
+        albion_fenian = neutral
+        albion_bogmorian = positive
+        albion_kernow = neutral
+        albion_oghamic = negative
+    }
+
+    culture_groups = {
+        human_group
+        albion_group
+    }
+}

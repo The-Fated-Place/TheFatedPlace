@@ -1,0 +1,433 @@
+﻿language_reikspiel = {
+	color = map_ENG
+	family = language_reikspiel_family
+
+	male_names = {
+		name_adalbert
+		name_adolf
+		name_albrecht
+		name_alexander
+		name_alfons
+		name_alfred
+		name_anton
+		name_arnold
+		name_artur
+		name_august
+		name_axel
+		name_balthazar
+		name_bernard
+		name_bernhard
+		name_bruno
+		name_caspar
+		name_christoph
+		name_conrad
+		name_detlef
+		name_dieter
+		name_dietrich
+		name_dirk
+		name_eberhard
+		name_eckhard
+		name_eduard
+		name_erich
+		name_erik
+		name_ernst
+		name_felix
+		name_florian
+		name_franz
+		name_frederick
+		name_friedrich
+		name_fritz
+		name_gebhard
+		name_georg
+		name_gerald
+		name_gerhard
+		name_gottfried
+		name_gustav
+		name_hans
+		name_hartmann
+		name_heinrich
+		name_helmut
+		name_hermann
+		name_hugo
+		name_jakob
+		name_johann
+		name_johannes
+		name_josef
+		name_jurgen
+		name_karl
+		name_karl_franz
+		name_kaspar
+		name_klaus
+		name_konrad
+		name_lambert
+		name_leonard
+		name_leopold
+		name_lothar
+		name_ludwig
+		name_luitpold
+		name_lutbert
+		name_lutz
+		name_magnus
+		name_manfred
+		name_markus
+		name_martin
+		name_matthias
+		name_maximillian
+		name_michael
+		name_otto
+		name_paul
+		name_peter
+		name_philipp
+		name_reinhold
+		name_robert
+		name_rudolf
+		name_rupert
+		name_sebastian
+		name_siegfried
+		name_siegmund
+		name_sigismund
+		name_sigbert
+		name_stefan
+		name_theodor
+		name_thomas
+		name_ulrich
+		name_valentin
+		name_veit
+		name_volker
+		name_walther
+		name_werner
+		name_wilhelm
+		name_wolfgang
+		name_wolfram
+		name_xaver
+	}
+
+	female_names = {
+		name_adela
+		name_adelheid
+		name_agnes
+		name_alexandra
+		name_anna
+		name_anneliese
+		name_annemarie
+		name_barbara
+		name_beatrix
+		name_bertha
+		name_brigitte
+		name_brunhilde
+		name_charlotte
+		name_christina
+		name_christine
+		name_dagmar
+		name_dorothea
+		name_edith
+		name_elisabeth
+		 name_elise
+		name_ellen
+		name_else
+		name_emilie
+		name_emma
+		name_eva
+		name_franziska
+		name_frederica
+		name_frieda
+		name_gabrielle
+		name_gertrud
+		name_gisela
+		name_gretchen
+		name_gudrun
+		name_hanna
+		name_hedwig
+		name_heidi
+		name_helga
+		name_helene
+		name_henriette
+		name_hildegard
+		name_ida
+		name_inge
+		name_ingeborg
+		name_ingrid
+		name_isabelle
+		name_johanna
+		name_judith
+		name_jutta
+		name_katharina
+		name_klara
+		name_kristin
+		name_kunigunde
+		name_laura
+		name_lena
+		name_liesel
+		name_lina
+		name_lisa
+		name_loretta
+		name_luitgard
+		name_magdalena
+		name_margarete
+		name_maria
+		name_marianne
+		name_marie
+		name_marlene
+		name_martha
+		name_mathilde
+		name_mechtild
+		name_monika
+		name_nadine
+		name_natalie
+		name_nora
+		name_ottilie
+		name_paula
+		name_petra
+		name_regina
+		name_renate
+		name_rosa
+		name_rosemarie
+		name_ruth
+		name_sabine
+		name_sandra
+		name_sigrid
+		name_sophia
+		name_stefanie
+		name_susanna
+		name_sybille
+		name_teresa
+		name_theodora
+		name_ulrike
+		name_ursula
+		name_ute
+		name_valentina
+		name_vera
+		name_verena
+		name_veronika
+		name_viktoria
+		name_walpurga
+		name_wilhelmina
+		name_winifred
+		name_yvette
+		name_zoe
+	}
+
+	dynasty_names = {
+	}
+
+	lowborn = {
+	}
+
+	ship_names = {
+	}
+
+	patronym_suffix_son = "patronym_suffix_german_son"
+	patronym_suffix_daughter = "patronym_suffix_german_son"
+
+	location_prefix = "location_prefix_german"
+
+	dialects = {
+		language_reikspiel_averlander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_drakwalder = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_hochlander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_middenlander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_reiklander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_stirlander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_sylvanian = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_talabeclander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_wissenlander = {
+			male_names = { }
+			female_names = { }
+		}
+		language_reikspiel_nordlander = { #Strong Norse flavour
+			male_names = {
+				name_ake
+				name_anund
+				name_arnbjorn
+				name_arne
+				name_arnfinn
+				name_asbjorn
+				name_asger
+				name_bagge
+				name_birger
+				name_bjorn
+				name_borkvard
+				name_botulf
+				name_dag
+				name_didrik
+				name_eigil
+				name_einar
+				name_eirik
+				name_erlending
+				name_erling
+				name_esben
+				name_faste
+				name_filip
+				name_finn
+				name_frode
+				name_gorm
+				name_gudbrand
+				name_gudmund
+				name_gudrod
+				name_hafdan
+				name_hakan
+				name_haldor
+				name_halfdan
+				name_hardeknut
+				name_hjalmar
+				name_ingolf
+				name_ivar
+				name_kettil
+				name_klas
+				name_knut
+				name_kol
+				name_kolbjorn
+				name_lars
+				name_lodin
+				name_mikkel
+				name_nils
+				name_odd
+				name_olaf
+				name_orm
+				name_orvar
+				name_ragnvald
+				name_sigtrygg
+				name_sigurd
+				name_skjalg
+				name_starkad
+				name_sven
+				name_svend
+				name_thorbjorn
+				name_torkel
+				name_tormod
+				name_torolf
+				name_torstein
+			}
+			female_names = {
+				name_agnethe
+				name_alfhild
+				name_ase
+				name_ashild
+				name_asta
+				name_benedikte
+				name_birgitta
+				name_bodil
+				name_edla
+				name_eldrid
+				name_elisabet
+				name_freja
+				name_gudrid
+				name_gunnhild
+				name_hafrid
+				name_helmi
+				name_ingebjorg
+				name_ingeger
+				name_ingrid
+				name_kristina
+				name_margrete
+				name_ragnahild
+				name_ragnfrid
+				name_ragnhild
+				name_sunniva
+				name_svanhild
+				name_thora
+				name_thorborg
+				name_thordis
+				name_thyra
+			}
+		}
+		language_reikspiel_westerlander = {	# heavy Dutch/Flemish influence
+			male_names = {
+				name_aad
+				name_aart
+				name_adriaan
+				name_andries
+				name_arend
+				name_arie
+				name_bartolomeus
+				name_bavo
+				name_boudewyn
+				name_cees
+				name_claes
+				name_cornelis
+				name_daan
+				name_diederick
+				name_dirk
+				name_douwe
+				name_frans
+				name_gerrit
+				name_gijs
+				name_gillis
+				name_hendrik
+				name_hubrecht
+				name_huybrecht
+				name_jaap
+				name_jacobus
+				name_jan
+				name_jelle
+				name_jeronimus
+				name_joost
+				name_joris
+				name_koenraad
+				name_lodewijk
+				name_maarten
+				name_maurits
+				name_michiel
+				name_niclaes
+				name_olivier
+				name_paulus
+				name_peter
+				name_philips
+				name_pieter
+				name_reinoud
+				name_robrecht
+				name_rogier
+				name_rutger
+				name_sjaak
+				name_stefanus
+				name_theo
+				name_thijs
+				name_willem
+				name_wouter
+			}
+			female_names = {
+				name_aafje
+				name_annemieke
+				name_catharina
+				name_cornelia
+				name_elisabeth
+				name_geertruida
+				name_gertrud
+				name_helga
+				name_ineke
+				name_jannetje
+				name_johanna
+				name_katrien
+				name_liesbeth
+				name_margriet
+				name_maria
+				name_sophie
+				name_willemine
+			}
+		}
+	}
+}

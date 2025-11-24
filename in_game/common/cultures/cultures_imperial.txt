@@ -1,0 +1,500 @@
+#Imperial
+
+averlander = {
+	language = language_reikspiel_averlander # language or dialect
+	
+	color = map_averland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		drakwalder = negative
+		hochlander = positive
+		middenlander = negative
+		nordlander = negative
+		neueslander = positive
+		ostermarker = neutral
+		ostlander = negative
+		reiklander = positive
+		sollander = kindred
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = positive
+		sudenburger = kindred
+		mootlander = negative
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+drakwalder = {
+	language = language_reikspiel_drakwalder # language or dialect
+	
+	color = map_drakwald # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		hochlander = neutral
+		middenlander = positive
+		nordlander = positive
+		neueslander = neutral
+		ostermarker = neutral
+		ostlander = positive
+		reiklander = negative
+		sollander = neutral
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+hochlander = {
+	language = language_reikspiel_hochlander # language or dialect
+	
+	color = map_hochland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = positive
+		drakwalder = neutral
+		middenlander = neutral
+		nordlander = positive
+		neueslander = positive
+		ostermarker = positive
+		ostlander = positive
+		reiklander = negative
+		sollander = neutral
+		stirlander = neutral
+		sylvanian = enemy
+		talabeclander = positive
+		westerlander = negative
+		wissenlander = neutral
+		sudenburger = neutral
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+middenlander = {
+	language = language_reikspiel_middenlander # language or dialect
+	
+	color = map_middenland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = positive
+		hochlander = neutral
+		nordlander = positive
+		neueslander = negative
+		ostermarker = neutral
+		ostlander = kindred
+		reiklander = negative
+		sollander = negative
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = negative
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+nordlander = {
+	language = language_reikspiel_nordlander # language or dialect
+	
+	color = map_nordland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = positive
+		hochlander = positive
+		middenlander = positive
+		neueslander = neutral
+		ostermarker = positive
+		ostlander = positive
+		reiklander = negative
+		sollander = negative
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}\
+ostermarker = {
+	language = language_reikspiel_ostermarker # language or dialect
+	
+	color = map_ostermark # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = neutral
+		drakwalder = neutral
+		hochlander = positive
+		middenlander = neutral
+		nordlander = positive
+		neueslander = positive
+		ostlander = kindred
+		reiklander = neutral
+		sollander = neutral
+		stirlander = positive
+		sylvanian = enemy
+		talabeclander = positive
+		westerlander = negative
+		wissenlander = neutral
+		sudenburger = neutral
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+ostlander = {
+	language = language_reikspiel_ostlander # language or dialect
+	
+	color = map_ostland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = positive
+		hochlander = positive
+		middenlander = kindred
+		nordlander = positive
+		neueslander = neutral
+		ostermarker = kindred
+		reiklander = negative
+		sollander = negative
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+reiklander = {
+	language = language_reikspiel_reiklander # language or dialect
+	
+	color = map_reikland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = positive
+		drakwalder = negative
+		hochlander = negative
+		middenlander = negative
+		nordlander = negative
+		neueslander = kindred
+		ostermarker = neutral
+		ostlander = negative
+		sollander = positive
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = negative
+		westerlander = negative
+		wissenlander = positive
+		sudenburger = positive
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+sollander = {
+	language = language_reikspiel_wissenlander # language or dialect
+	
+	color = map_solland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = kindred
+		drakwalder = negative
+		hochlander = neutral
+		middenlander = negative
+		nordlander = negative
+		neueslander = positive
+		ostermarker = neutral
+		ostlander = negative
+		reiklander = positive
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = positive
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+stirlander = {
+	language = language_reikspiel_stirlander # language or dialect
+	
+	color = map_stirland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = negative
+		hochlander = neutral
+		middenlander = negative
+		nordlander = negative
+		neueslander = neutral
+		ostermarker = positive
+		ostlander = neutral
+		reiklander = negative
+		sollander = negative
+		sylvanian = enemy
+		talabeclander = negative
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = neutral
+		mootlander = negative
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+talabeclander = {
+	language = language_reikspiel_talabeclander # language or dialect
+	
+	color = map_talabecland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = neutral
+		drakwalder = neutral
+		hochlander = positive
+		middenlander = negative
+		nordlander = neutral
+		neueslander = neutral
+		ostermarker = positive
+		ostlander = neutral
+		reiklander = negative
+		sollander = neutral
+		stirlander = negative
+		sylvanian = enemy
+		westerlander = negative
+		wissenlander = neutral
+		sudenburger = neutral
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+westerlander = {
+	language = language_reikspiel_westerlander # language or dialect
+	
+	color = map_westerland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = negative
+		hochlander = negative
+		middenlander = negative
+		nordlander = negative
+		neueslander = negative
+		ostermarker = negative
+		ostlander = negative
+		reiklander = negative
+		sollander = negative
+		stirlander = negative
+		sylvanian = enemy
+		talabeclander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = neutral
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+wissenlander = {
+	language = language_reikspiel_wissenlander # language or dialect
+	
+	color = map_wissenland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = positive
+		drakwalder = negative
+		hochlander = neutral
+		middenlander = negative
+		nordlander = negative
+		neueslander = positive
+		ostermarker = neutral
+		ostlander = negative
+		reiklander = positive
+		sollander = negative
+		stirlander = neutral
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		sudenburger = positive
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+
+#Not Used
+sylvanian = {
+	language = language_reikspiel_sylvanian # language or dialect
+	
+	color = map_sylvania # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = negative
+		drakwalder = negative
+		hochlander = negative
+		middenlander = negative
+		nordlander = negative
+		neueslander = negative
+		ostermarker = negative
+		ostlander = negative
+		reiklander = negative
+		sollander = negative
+		stirlander = enemy
+		talabeclander = negative
+		westerlander = negative
+		wissenlander = negative
+		sudenburger = negative
+		mootlander = negative
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+neueslander = {
+	language = language_reikspiel_reiklander # language or dialect
+	
+	color = map_neuesland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = positive
+		drakwalder = neutral
+		hochlander = positive
+		middenlander = negative
+		nordlander = neutral
+		ostermarker = positive
+		ostlander = neutral
+		reiklander = kindred
+		sollander = positive
+		stirlander = neutral
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = negative
+		wissenlander = positive
+		sudenburger = positive
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+sudenburger = {
+	language = language_reikspiel_westerlander # language or dialect
+	
+	color = map_sudenburg # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+		averlander = kindred
+		drakwalder = negative
+		hochlander = neutral
+		middenlander = negative
+		nordlander = negative
+		neueslander = positive
+		ostermarker = neutral
+		ostlander = negative
+		reiklander = positive
+		sollander = positive
+		stirlander = neutral
+		sylvanian = enemy
+		talabeclander = neutral
+		westerlander = positive
+		wissenlander = positive
+		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}

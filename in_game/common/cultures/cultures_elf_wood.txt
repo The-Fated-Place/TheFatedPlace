@@ -1,0 +1,40 @@
+#Wood Elf
+
+elf_loren = {
+    language = language_eltharin_loren # language or dialect
+
+    color = map_elf_loren
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        elf_eonir = positive
+        asur_group = negative
+        druchi_group = enemy
+        bretonnian_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asrai_group
+    }
+}
+elf_eonir = {
+    language = language_eltharin_eonir # language or dialect
+
+    color = map_elf_eonir
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        elf_loren = positive
+        asur_group = neutral
+        druchi_group = enemy
+        imperial_group = negative
+    }
+
+    culture_groups = {
+        elf_group
+        asrai_group
+    }
+}

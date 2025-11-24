@@ -1,0 +1,163 @@
+#Dark Elf
+
+autarri = {
+    language = language_eltharin_autarri # language or dialect
+
+    color = map_autarri
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        clari = positive
+        ganethi = kindred
+        ghrondari = negative
+        graefi = neutral
+        karondi = negative
+        naggarondi = neutral
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+clari = {
+    language = language_eltharin_clari # language or dialect
+
+    color = map_clari
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = positive
+        ganethi = positive
+        ghrondari = neutral
+        graefi = positive
+        karondi = positive
+        naggarondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+ganethi = {
+    language = language_eltharin_ganethi # language or dialect
+
+    color = map_ganethi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = kindred
+        clari = positive
+        ghrondari = negative
+        graefi = neutral
+        karondi = negative
+        naggarondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+ghrondari = {
+    language = language_eltharin_ghrondari # language or dialect
+
+    color = map_ghrondari
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = negative
+        clari = neutral
+        ganethi = negative
+        graefi = neutral
+        karondi = positive
+        naggarondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+graefi = {
+    language = language_eltharin_graefi # language or dialect
+
+    color = map_graefi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = neutral
+        clari = positive
+        ganethi = neutral
+        ghrondari = neutral
+        karondi = positive
+        naggarondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+karondi = {
+    language = language_eltharin_karondi # language or dialect
+
+    color = map_karondi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = negative
+        clari = positive
+        ganethi = negative
+        ghrondari = positive
+        graefi = positive
+        naggarondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}
+naggarondi = {
+    language = language_eltharin_naggarondi # language or dialect
+
+    color = map_naggarondi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        autarri = neutral
+        clari = positive
+        ganethi = positive
+        ghrondari = positive
+        graefi = positive
+        karondi = positive
+        asur_group = enemy
+        asrai_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        druchi_group
+    }
+}

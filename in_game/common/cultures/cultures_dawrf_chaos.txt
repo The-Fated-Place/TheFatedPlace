@@ -1,0 +1,18 @@
+#Chaos Dwarf
+
+dwarf_chaos = {
+    language = language_khazalid_zharr # language or dialect
+	
+	color = map_dwarf_chaos # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_khazalid_group = enemy    #Not Sure if this Works
+	}
+
+	culture_groups = {
+        dwarf_group
+        dawrf_chaos_group
+	}
+}

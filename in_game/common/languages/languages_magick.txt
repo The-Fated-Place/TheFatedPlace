@@ -1,0 +1,22 @@
+﻿languages_magick = {
+	color = religion_catholic
+
+	family = language_magick_family
+
+	fallback = language_eltharin
+
+	male_names = {
+
+	}
+	female_names = {
+
+	}
+	dynasty_names = {
+	}
+	lowborn = {
+	}
+	ship_names = {
+	}
+
+	#dialects = {} # maybe the diffent cults
+}

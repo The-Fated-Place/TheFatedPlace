@@ -1,0 +1,299 @@
+#High Elf
+
+avelorni = {
+    language = language_eltharin_avelorni # language or dialect
+
+    color = map_avelorni
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        caledori = positive
+        chracian = neutral
+        cothiq = positive
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = neutral
+        tiranoci = positive
+        yvressi = neutral
+        asur_colonial = positive
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+caledori = {
+    language = language_eltharin_cothiq # language or dialect
+
+    color = map_caledori
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = positive
+        chracian = neutral
+        cothiq = positive
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = neutral
+        tiranoci = neutral
+        yvressi = neutral
+        asur_colonial = positive
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+chracian = {
+    language = language_eltharin_chracian # language or dialect
+
+    color = map_chracian
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = neutral
+        caledori = neutral
+        cothiq = neutral
+        eatainian = positive
+        ellyrian = positive
+        nagarythi = positive
+        sapherian = neutral
+        tiranoci = neutral
+        yvressi = positive
+        asur_colonial = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+cothiq = {
+    language = language_eltharin_cothiq # language or dialect
+
+    color = map_cothiq
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = positive
+        caledori = positive
+        chracian = neutral
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = positive
+        tiranoci = neutral
+        yvressi = neutral
+        asur_colonial = positive
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+eatainian = {
+    language = language_eltharin_eatainian # language or dialect
+
+    color = map_eatainian
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = positive
+        caledori = positive
+        chracian = positive
+        cothiq = positive
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = positive
+        tiranoci = neutral
+        yvressi = positive
+        asur_colonial = positive
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+ellyrian = {
+    language = language_eltharin_ellyrian # language or dialect
+
+    color = map_ellyrian
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = neutral
+        caledori = neutral
+        chracian = positive
+        cothiq = neutral
+        eatainian = neutral
+        nagarythi = neutral
+        sapherian = neutral
+        tiranoci = neutral
+        yvressi = neutral
+        asur_colonial = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+nagarythi = {
+    language = language_eltharin_nagarythi # language or dialect
+
+    color = map_nagarythi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = neutral
+        caledori = neutral
+        chracian = positive
+        cothiq = neutral
+        eatainian = neutral
+        ellyrian = neutral
+        sapherian = negative
+        tiranoci = neutral
+        yvressi = positive
+        asur_colonial = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+sapherian = {
+    language = language_eltharin_sapherian # language or dialect
+
+    color = map_sapherian
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = neutral
+        caledori = neutral
+        chracian = neutral
+        cothiq = positive
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = negative
+        tiranoci = neutral
+        yvressi = neutral
+        asur_colonial = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+tiranoci = {
+    language = language_eltharin_tiranoci # language or dialect
+
+    color = map_tiranoci
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = positive
+        caledori = neutral
+        chracian = neutral
+        cothiq = neutral
+        eatainian = neutral
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = neutral
+        yvressi = positive
+        asur_colonial = positive
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+yvressi = {
+    language = language_eltharin_yvressi # language or dialect
+
+    color = map_yvressi
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = neutral
+        caledori = neutral
+        chracian = positive
+        cothiq = neutral
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = positive
+        sapherian = neutral
+        tiranoci = positive
+        asur_colonial = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}
+asur_colonial = {
+    language = language_eltharin_colonial # language or dialect
+
+    color = map_asur_colonial
+
+    tags = { western_european_gfx european_gfx }
+
+    opinions = {
+        avelorni = positive
+        caledori = positive
+        chracian = neutral
+        cothiq = positive
+        eatainian = positive
+        ellyrian = neutral
+        nagarythi = neutral
+        sapherian = neutral
+        tiranoci = positive
+        yvressi = neutral
+        asrai_group = negative
+        druchi_group = enemy
+    }
+
+    culture_groups = {
+        elf_group
+        asur_group
+    }
+}

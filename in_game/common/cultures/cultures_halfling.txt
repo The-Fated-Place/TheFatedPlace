@@ -1,0 +1,62 @@
+#Halfling
+
+mootlander = {
+	language = language_halfling_mootish # language or dialect
+	
+	color = map_mootland # jomini color
+	
+	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+	opinions = {
+                averlander = positive
+                drakwalder = positive
+                hochlander = positive
+                middenlander = positive
+                nordlander = positive
+                neueslander = positive
+                ostermarker = positive
+                ostlander = positive
+                reiklander = positive
+                sollander = positive
+                stirlander = positive
+                sylvanian = negative
+                talabeclander = positive
+                westerlander = positive
+                wissenlander = positive
+                sudenburger = positive
+	}
+
+	culture_groups = {
+	        halfling_group
+	}
+}
+# miyan = {
+# 	language = language_halfling_miyan # language or dialect
+	
+# 	color = map_miya # jomini color
+	
+# 	tags = { north_german_gfx german_gfx western_european_gfx european_gfx } # gfx tags 
+
+# 	opinions = {
+#         averlander = positive
+#         drakwalder = positive
+#         hochlander = positive
+#         middenlander = positive
+#         nordlander = positive
+#         neueslander = positive
+#         ostermarker = positive
+#         ostlander = positive
+#         reiklander = positive
+#         sollander = positive
+#         stirlander = positive
+#         sylvanian = negative
+#         talabeclander = positive
+#         westerlander = positive
+#         wissenlander = positive
+#         sudenburger = positive
+# 	}
+
+# 	culture_groups = {
+# 		halfling_group
+# 	}
+# }

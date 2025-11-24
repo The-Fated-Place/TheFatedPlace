@@ -1,0 +1,457 @@
+﻿language_norscan = {
+	color = map_icelandic
+	family = language_norscan_family
+
+	male_names = {
+		name_adils
+		name_agnar
+		name_alf
+		name_alfgeir
+		name_alfheim
+		name_alfketill
+		name_alfred
+		name_almund
+		name_anund
+		name_arnbjorn
+		name_arne
+		name_arnfinn
+		name_arngrim
+		name_arnkel
+		name_arnlaug
+		name_arnmod
+		name_arnthor
+		name_arnvid
+		name_asbjorn
+		name_asgeir
+		name_asgrim
+		name_askell
+		name_aslak
+		name_asmund
+		name_astmund
+		name_atli
+		name_audbjorn
+		name_audun
+		name_baggi
+		name_bardi
+		name_bersi
+		name_birger
+		name_bjarni
+		name_bjorn
+		name_bjornolf
+		name_bork
+		name_botulf
+		name_brand
+		name_brandr
+		name_brynjolf
+		name_dag
+		name_dagfinn
+		name_einar
+		name_eirik
+		name_eirikr
+		name_eyjolf
+		name_eyvind
+		name_finn
+		name_finnr
+		name_floki
+		name_frode
+		name_gauti
+		name_geir
+		name_geirmund
+		name_geirstein
+		name_gisli
+		name_gorm
+		name_grim
+		name_grimkell
+		name_gudbrand
+		name_gudmund
+		name_gudrod
+		name_gunnar
+		name_gunnlaug
+		name_hakon
+		name_halfdan
+		name_hallbjorn
+		name_halldor
+		name_hallfred
+		name_hallgrim
+		name_hallstein
+		name_hallvard
+		name_harald
+		name_haraldur
+		name_herjolf
+		name_hjalmar
+		name_hjorleif
+		name_hord
+		name_hrafn
+		name_hroar
+		name_hrolf
+		name_ingimund
+		name_ingolf
+		name_ingvar
+		name_ivar
+		name_kari
+		name_ketill
+		name_knut
+		name_kol
+		name_kolbjorn
+		name_orm
+		name_orn
+		name_ragnvald
+		name_ragnarr
+		name_sigtrygg
+		name_sigurd
+		name_sigvat
+		name_snorri
+		name_starkad
+		name_stein
+		name_steinn
+		name_svein
+		name_svend
+		name_thorbrand
+		name_thorfinn
+		name_thorgeir
+		name_thorgils
+		name_thorgrim
+		name_thorleif
+		name_thormod
+		name_thorstein
+		name_thorvald
+		name_torfi
+		name_tosti
+		name_tryggvi
+		name_ulf
+		name_ulfr
+		name_vali
+		name_vestar
+		name_vigfus
+	}
+
+	female_names = {
+		name_alfhild
+		name_arnfrid
+		name_arngunn
+		name_asdis
+		name_ashild
+		name_aslaug
+		name_asny
+		name_asta
+		name_astrid
+		name_astridr
+		name_bera
+		name_bergdis
+		name_bergljot
+		name_birna
+		name_bjorg
+		name_borghild
+		name_botilda
+		name_dalla
+		name_dis
+		name_driva
+		name_edny
+		name_eir
+		name_eirny
+		name_eydis
+		name_freydis
+		name_frida
+		name_fridbjorg
+		name_frigg
+		name_gerd
+		name_grid
+		name_gudny
+		name_gudrid
+		name_gudrun
+		name_gunnhild
+		name_gunvor
+		name_halla
+		name_hallbera
+		name_halldis
+		name_hallfrid
+		name_hallgerd
+		name_hallkatla
+		name_helga
+		name_herbjorg
+		name_hild
+		name_hildr
+		name_hlif
+		name_hrodny
+		name_hulda
+		name_ingibjorg
+		name_ingigerd
+		name_ingrid
+		name_ingunn
+		name_jorunn
+		name_katla
+		name_kjartan
+		name_liv
+		name_lofn
+		name_ljufa
+		name_oddny
+		name_ragnhild
+		name_ragnfrid
+		name_ranveig
+		name_salbjorg
+		name_saeunn
+		name_sigrid
+		name_sigrun
+		name_sigurd
+		name_siv
+		name_sjofn
+		name_skuld
+		name_snora
+		name_snotra
+		name_solveig
+		name_steinunn
+		name_svana
+		name_svanhild
+		name_svanlaug
+		name_thora
+		name_thorbjorg
+		name_thordis
+		name_thorgerd
+		name_thorhild
+		name_thorkatla
+		name_thorunn
+		name_thrud
+		name_tindra
+		name_tove
+		name_ulfrun
+		name_unn
+		name_valgerd
+		name_vigdis
+		name_vigunn
+		name_yngvild
+		name_yr
+		name_asgerd
+		name_baugeid
+		name_borghild
+		name_freygerd
+		name_gjaflaug
+		name_gudbjorg
+		name_gunnhildr
+		name_hrodgerd
+		name_jofrid
+		name_ormhild
+		name_thraslaug
+		name_vilborg
+		name_ystra
+	}
+
+	dynasty_names = {
+	}
+
+	lowborn = {
+	}
+
+	ship_names = {
+	}
+
+	patronym_suffix_son = "patronym_suffix_swedish_son"
+	patronym_suffix_daughter = "patronym_suffix_icelandic_daughter"
+
+	location_prefix = "location_prefix_danish"
+	descendant_suffix = "descendant_suffix_swedish_male"
+
+	dialects = {
+		language_norscan_aesling = {
+			male_names = {
+				name_aesir
+				name_agnarr
+				name_askr
+				name_baugi
+				name_beli
+				name_bragi
+				name_buri
+				name_dagr
+				name_delling
+				name_durin
+				name_fenrir
+				name_fjolnir
+				name_forseti
+				name_freki
+				name_fulli
+				name_garm
+				name_geri
+				name_glammi
+				name_gleipnir
+				name_grerr
+				name_hati
+				name_heidr
+				name_hlidskjalf
+				name_hnikar
+				name_hod
+				name_hornbori
+				name_hrimnir
+				name_hropt
+				name_hvedr
+				name_hymir
+				name_ymir
+				name_jormungand
+				name_kvasir
+				name_lodur
+				name_loki
+				name_modi
+				name_moin
+				name_narfi
+				name_njord
+				name_regin
+				name_skoll
+				name_sleipnir
+				name_surt
+				name_thor
+				name_thrainn
+				name_thrudvang
+				name_tyr
+				name_ve
+				name_vili
+				name_yngvi
+			}
+			female_names = {
+				name_angrboda
+				name_bestla
+				name_ellir
+				name_fjorgyn
+				name_frigg
+				name_fullna
+				name_gna
+				name_hlin
+				name_idunn
+				name_jord
+				name_nanna
+				name_nott
+				name_ran
+				name_sif
+				name_sigyn
+				name_skarms
+				name_skadi
+				name_syn
+				name_thrudd
+				name_vor
+				name_zisa
+			}
+		}
+		language_norscan_baersonling = {
+			male_names = {
+				name_baug
+				name_bersi
+				name_bjarki
+				name_bjorn
+				name_bjornulf
+				name_brandr
+				name_brynjolf
+				name_dagfinn
+				name_eyvind
+				name_frodi
+				name_garmund
+				name_geirbjorn
+				name_grimolf
+				name_hrolf
+				name_ketilbjorn
+				name_ormbjorn
+				name_ragnvald
+				name_sigbjorn
+				name_skarde
+				name_styrbjorn
+				name_thorbjorn
+				name_thord
+				name_tind
+				name_ulfbjorn
+				name_valbjorn
+			}
+			female_names = {
+				name_baugdis
+				name_bjorgdis
+				name_bjork
+				name_freybjorg
+				name_gunnbjorg
+				name_hrodlaug
+				name_ingibjorg
+				name_sigbjorg
+				name_thorbjorg
+				name_ursbjorg
+			}
+		}
+		language_norscan_bjornling = {
+			male_names = {
+				name_bjornar
+				name_bjornvard
+				name_grizzly
+				name_honeyfang
+				name_ivar_bjornkin
+				name_kodiak
+				name_ursbjorn
+				name_urskald
+			}
+			female_names = {
+				name_bjornhild
+				name_ursula
+			}
+		}
+		language_norscan_graeling = {
+			male_names = {
+				name_graefang
+				name_graewulf
+				name_harald_graeling
+				name_hrothgar
+				name_ragrik
+				name_skofnung
+				name_thrain_grae
+			}
+			female_names = {
+				name_graelaug
+				name_hrothild
+			}
+		}
+		language_norscan_sarl = {
+			male_names = {
+				name_sarlfang
+				name_skollfang
+				name_wulfric
+			}
+			female_names = {
+				name_sarlhild
+			}
+		}
+		language_norscan_skaeling = {
+			male_names = {
+				name_skallagrim
+				name_skaeldir
+				name_skaeling
+				name_thorkell
+			}
+			female_names = {
+				name_skallfrid
+			}
+		}
+		language_norscan_varg = {
+			male_names = {
+				name_varg
+				name_vargr
+				name_wulfgar
+				name_wulfrik
+			}
+			female_names = {
+				name_varghild
+				name_wulfrun
+			}
+		}
+		language_norscan_kuldevinder = {
+			male_names = {
+				name_kulgrim
+				name_kultain
+				name_kulvard
+			}
+			female_names = {
+				name_kulhild
+			}
+		}
+		language_norscan_skeggi = {
+			male_names = {
+				name_skeggi
+				name_skeggjold
+				name_skeggox
+			}
+			female_names = {
+				name_skeggla
+			}
+		}
+	}
+}

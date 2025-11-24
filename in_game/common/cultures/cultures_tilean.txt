@@ -1,0 +1,178 @@
+#Tilean
+
+lucian = {
+	language = language_tilean_luccinian # language or dialect
+	
+	color = map_lucian # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        miraglian = neutral
+        myken = negative 
+        oltremari = positive
+        reman = negative
+        sartosan = enemy
+        tobaran = neutral
+        umbrian = neutral
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+miraglian = {
+	language = language_tilean_miraglian # language or dialect
+	
+	color = map_miraglian # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = neutral
+        myken = neutral
+        oltremari = positive
+        reman = positive
+        sartosan = enemy
+        tobaran = positive
+        umbrian = positive
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+myken = {
+	language = language_tilean_mykenian # language or dialect
+	
+	color = map_myken # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = negative
+        miraglian = neutral
+        oltremari = negative
+        reman = neutral
+        sartosan = enemy
+        tobaran = neutral
+        umbrian = positive
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+oltremari = {
+	language = language_tilean_oltremare # language or dialect
+	
+	color = map_oltremari # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+     lucian = positive
+        miraglian = positive
+        myken = negative
+        reman = positive
+        sartosan = enemy
+        tobaran = positive
+        umbrian = neutral
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+reman = {
+	language = language_tilean_reman # language or dialect
+	
+	color = map_reman # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = negative
+        miraglian = positive
+        myken = neutral
+        oltremari = positive
+        sartosan = enemy
+        tobaran = positive
+        umbrian = positive
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+sartosan = {
+	language = language_tilean_sartosan_patois # language or dialect
+	
+	color = map_sartosan # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = enemy
+        miraglian = enemy
+        myken = enemy
+        oltremari = enemy
+        reman = enemy
+        tobaran = enemy
+        umbrian = enemy
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+tobaran = {
+	language = language_tilean_tobaran # language or dialect
+	
+	color = map_tobaran # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = neutral
+        miraglian = positive
+        myken = neutral
+        oltremari = positive
+        reman = positive
+        sartosan = enemy
+        umbrian = positive
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}
+umbrian = {
+	language = language_tilean_umbrian # language or dialect
+	
+	color = map_umbrian # jomini color
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        lucian = neutral
+        miraglian = positive
+        myken = positive
+        oltremari = neutral
+        reman = positive
+        sartosan = enemy
+        tobaran = positive
+	}
+
+	culture_groups = {
+		human_group
+		tilean_group
+	}
+}

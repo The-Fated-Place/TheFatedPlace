@@ -1,0 +1,178 @@
+#Estalian
+
+astur = {
+    language = language_estalian_astur # language or dialect
+	
+	color = map_astur # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        avilian = neutral
+        galice = positive
+        montanese = kindred
+        norteno = neutral
+        obregonese = negative
+        comarcano = neutral
+        tigarrese = negative
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+avilian = {
+    language = language_estalian_western # language or dialect
+	
+	color = map_avilian # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = neutral
+        galice = positive
+        montanese = neutral
+        norteno = neutral
+        obregonese = positive
+        comarcano = neutral
+        tigarrese = negative
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+galice = {
+    language = language_estalian_western # language or dialect
+	
+	color = map_galice # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = positive
+        avilian = positive
+        montanese = positive
+        norteno = neutral
+        obregonese = neutral
+        comarcano = neutral
+        tigarrese = negative
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+montanese = {
+    language = language_estalian_astur # language or dialect
+	
+	color = map_montanese # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = kindred
+        galice = positive
+        avilian = neutral
+        norteno = positive
+        obregonese = neutral
+        comarcano = negative
+        tigarrese = negative
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+norteno = {
+    language = language_estalian_norteno # language or dialect
+	
+	color = map_norteno # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = neutral
+        galice = neutral
+        montanese = positive
+        avilian = neutral
+        obregonese = positive
+        comarcano = positive
+        tigarrese = neutral  
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+obregonese = {
+    language = language_estalian_obregonese # language or dialect
+	
+	color = map_obregonese # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = negative
+        galice = neutral
+        montanese = neutral
+        norteno = positive
+        avilian = positive
+        comarcano = positive
+        tigarrese = neutral     
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+comarcano = {
+    language = language_estalian_comarcano # language or dialect
+	
+	color = map_comarcano # jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = neutral
+        galice = neutral
+        montanese = negative
+        norteno = positive
+        obregonese = positive
+        avilian = neutral
+        tigarrese = positive
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}
+tigarrese = {
+    language = language_estalian_tigarrese # language or dialect
+	
+	color = map_tigarrese	# jomini color
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+        astur = negative
+        galice = negative
+        montanese = negative
+        norteno = neutral
+        obregonese = neutral
+        avilian = negative
+        comarcano = positive     
+	}
+
+	culture_groups = {
+		human_group
+		estalian_group
+	}
+}

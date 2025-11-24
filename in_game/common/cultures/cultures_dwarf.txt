@@ -1,0 +1,469 @@
+#Dwarf
+
+dwarf_imperial = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_imperial # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_southron = positive
+        dwarf_grey = positive
+        dwarf_norse_group = positive
+        dwarf_norn = positive
+        dwarf_izor = neutral
+        dwarf_hirn = positive
+        dwarf_zhufbar = positive
+        dwarf_kadrin = positive
+        dwarf_karak = kindred
+        dwarf_azul = positive
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = positive
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_southron = {
+    language = language_khazalid_southron # language or dialect
+	
+	color = map_dwarf_southron # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_grey = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_grey # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = kindred
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_norse = {
+    language = language_khazalid_norse # language or dialect
+	
+	color = map_dwarf_norse # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_dum = kindred
+        dwarf_drak = kindred
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+        dwarf_norse_group
+	}
+}
+dwarf_norn = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_norn # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = kindred
+        dwarf_norse_group = neutral
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_izor = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_izor # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = neutral
+        dwarf_southron = neutral
+        dwarf_grey = positive
+        dwarf_norse_group = neutral
+        dwarf_norn = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = positive
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = positive
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_hirn = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_hirn # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = positive
+        dwarf_norse_group = neutral
+        dwarf_norn = positive
+        dwarf_izor = positive
+        dwarf_zhufbar = positive
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = positive
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_zhufbar = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_zhufbar # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_kadrin = positive
+        dwarf_karak = kindred
+        dwarf_azul = positive
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_kadrin = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_kadrin # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = positive
+        dwarf_karak = kindred
+        dwarf_azul = positive
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_karak = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_karak # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = kindred
+        dwarf_southron = positive
+        dwarf_grey = positive
+        dwarf_norse_group = positive
+        dwarf_norn = positive
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = kindred
+        dwarf_kadrin = kindred
+        dwarf_azul = kindred
+        dwarf_varr = kindred
+        dwarf_vlagaar = positive
+        dwarf_dum = positive
+        dwarf_drak = positive
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_azul = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_azul # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = positive
+        dwarf_kadrin = positive
+        dwarf_karak = kindred
+        dwarf_varr = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_varr = {
+    language = language_khazalid_varr # language or dialect
+	
+	color = map_dwarf_varr # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = positive
+        dwarf_hirn = positive
+        dwarf_zhufbar = positive
+        dwarf_kadrin = positive
+        dwarf_karak = kindred
+        dwarf_azul = positive
+        dwarf_vlagaar = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_vlagaar = {
+    language = language_khazalid_standard # language or dialect
+	
+	color = map_dwarf_vlagaar # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = neutral
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = neutral
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_dum = neutral
+        dwarf_drak = neutral
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_dum = {
+    language = language_khazalid_dum # language or dialect
+	
+	color = map_dwarf_dum # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = neutral
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = kindred
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_drak = kindred
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+	}
+}
+dwarf_drak = {
+    language = language_khazalid_norse # language or dialect
+	
+	color = map_dwarf_drak # jomini color
+	
+    tags = { scottish_lowland_gfx scottish_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+	
+    opinions = {
+        dwarf_imperial = positive
+        dwarf_southron = neutral
+        dwarf_grey = neutral
+        dwarf_norse_group = kindred
+        dwarf_norn = neutral
+        dwarf_izor = neutral
+        dwarf_hirn = neutral
+        dwarf_zhufbar = neutral
+        dwarf_kadrin = neutral
+        dwarf_karak = positive
+        dwarf_azul = neutral
+        dwarf_varr = neutral
+        dwarf_vlagaar = neutral
+        dwarf_dum = kindred
+
+        dawrf_chaos_group = enemy
+	}
+
+	culture_groups = {
+        dwarf_group
+        dwarf_khazalid_group
+        dwarf_norse_group
+	}
+}

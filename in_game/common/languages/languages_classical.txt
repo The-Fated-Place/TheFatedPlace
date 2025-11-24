@@ -1,0 +1,26 @@
+﻿languages_classical = {
+	color = religion_catholic
+
+	family = languages_classical_family
+
+	fallback = language_tilean
+
+	male_names = {
+
+	}
+	female_names = {
+
+	}
+	dynasty_names = {
+	}
+	lowborn = {
+	}
+	ship_names = {
+	}
+	patronym_prefix_son = "patronym_prefix_latin_son"
+	patronym_prefix_daughter = "patronym_prefix_latin_daughter"
+
+	location_suffix = "ensis"
+
+	#dialects = {}	#Nope
+}

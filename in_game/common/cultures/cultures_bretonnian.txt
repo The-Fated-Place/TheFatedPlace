@@ -1,0 +1,211 @@
+#Bretonnian
+
+armoric = {
+    language = language_breton_armoric # language or dialect
+	
+	color = map_armoric # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		bourgon = negative
+        breton = positive
+        gascon = neutral
+        gisoren = positive
+        marcheur = kindred
+        nortagnese = negative
+		carcassian = neutral
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+bourgon = {
+    language = language_breton_bourgon # language or dialect
+	
+	color = map_bourgon # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = negative
+        breton = neutral
+        gascon = positive
+        gisoren = neutral
+        marcheur = negative
+        nortagnese = kindred
+		carcassian = neutral
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+breton = {
+    language = language_breton_standard # language or dialect
+	
+	color = map_breton # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = positive
+        bourgon = neutral
+        gascon = positive
+        gisoren = neutral
+        marcheur = neutral
+        nortagnese = positive
+		carcassian = positive
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+carcassian = {
+    language = language_breton_carcassien # language or dialect
+	
+	color = map_carcassian # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = neutral
+		bourgon = neutral
+		breton = positive
+		gascon = kindred
+		gisoren = positive
+		marcheur = positive
+		nortagnese = neutral
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+gascon = {
+    language = language_breton_gascon # language or dialect
+	
+	color = map_gascon # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = neutral
+        bourgon = positive
+        breton = positive
+        gisoren = neutral
+        marcheur = negative
+        nortagnese = neutral
+		carcassian = kindred
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+gisoren = {
+    language = language_breton_gisoren # language or dialect
+	
+	color = map_gisoren # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = positive
+        bourgon = neutral
+        breton = neutral
+        gascon = neutral
+        marcheur = positive
+        nortagnese = neutral
+		carcassian = positive
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+mousillonian = {
+    language = language_breton_mousillese # language or dialect
+	
+	color = map_mousillonian # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = negative
+		bourgon = negative
+		breton = negative
+		gascon = negative
+		gisoren = negative
+		marcheur = negative
+		nortagnese = negative
+		carcassian = negative
+		}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+nortagnese = {
+    language = language_breton_nortagnese # language or dialect
+	
+	color = map_nortagnese # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = negative
+        bourgon = kindred
+        breton = positive
+        gascon = neutral
+        gisoren = neutral
+        marcheur = negative
+		carcassian = neutral
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
+
+#Not Used
+marcheur = {
+    language = language_breton_gisoren # language or dialect
+	
+	color = map_marcheur # jomini color
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		armoric = kindred
+        bourgon = negative
+        breton = neutral
+        gascon = negative
+        gisoren = positive
+        nortagnese = negative
+		carcassian = positive
+		mousillonian = negative
+	}
+
+	culture_groups = {
+		human_group
+		bretonnian_group
+	}
+}
