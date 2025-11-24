@@ -57,6 +57,49 @@
 		}
 	}
 
+    sigmar_policy = {
+        on_activate = {
+        }
+        on_deactivate = {
+        }
+
+        country_modifier = {
+            monthly_legitimacy = 0.05
+            global_monthly_development = 0.001
+            allow_righteousness = yes
+        }
+        country_modifier = {
+            potential_trigger = {
+                custom_tooltip = {
+                    text = disfavoring_cult_tt
+                    has_variable = disfavoring_cult
+                    exists = scope:recipient
+                    var:disfavoring_cult ?= {
+                        this = scope:recipient
+                    }
+                }
+            }
+            monthly_legitimacy = -0.1
+            monthly_righteousness = -0.1
+            allow_righteousness = yes
+        }
+        country_modifier = {
+            potential_trigger = {
+                custom_tooltip = {
+                    text = promoting_cult_tt
+                    has_variable = promoting_cult
+                    exists = scope:recipient
+                    var:promoting_cult ?= {
+                        NOT = { this = scope:recipient }
+                    }
+                }
+            }
+            monthly_legitimacy = -0.05
+            monthly_righteousness = -0.05
+            allow_righteousness = yes
+        }
+    }
+
 
 
 }

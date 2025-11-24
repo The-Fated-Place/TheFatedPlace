@@ -325,11 +325,6 @@
             }
         }
 
-			
-
-			}
-		}
-
 		#Auto-join countries when very high favor
 		if = {
 			limit = { 
@@ -365,7 +360,9 @@
 				}
 			}
 		}
-	}
+    }
+
+
 	
 	ai_desire_to_join = {
 		#how useful is this branch?
@@ -381,4 +378,5 @@
 			value = 20
 		}
 	}
+
 }

@@ -20,6 +20,198 @@ seas3 = 0a9cf6
 seas4 = 64bbf1
 seas5 = 194662
 
+Kreutzhofen =008600
+Geistwald =008100
+Boashügel = 127b00
+Brenzwald =0c7600
+Tierhügel =077000
+Michelfurt =026b00
+Sonnefurt =0eb400
+
+Hardtenau =006600
+Bezauhügel =006100
+Ostrach =045100
+Lederfeld =005700
+Alpirswald =005c00
+Bezauwald =0cab00
+
+Geltensumpf =004c00
+Kell =004700
+Thalfang =004200
+Oshausen =003800
+Legau =009b00
+Hornfeld =003d00
+
+Wusteburg =003300
+Wundtwald =002e00
+Serrig =002900
+Ertigen =002400
+Melkenfeld =009300
+Hitisau =001f00
+
+Ellhügel =0a1f00
+Ziertwald =141f00
+Tannhügel =008b00
+
+Merogenfeld =2b1f00
+Dietenwald =261f00
+Trulben =25c809
+
+Salmhügel =301f00
+Nehren =351f00
+Salmfähre =18be00
+Ostsalmwald =3a1f00
+
+
+Salmwald =70be82
+Geschberg =7abe8c
+Auggen =56be69
+Lauben =75be87
+Kazad_Tark =6bbe7d
+
+Meissen =8fbea1
+Kazad_Almon =7fbe91
+Schwarzweidesumpf =84be96
+Heisenberg =94bea6
+Rundstedt =5cbe6e
+Oberharrachwald =89be9c
+
+Unterharrachwald =99beab
+Harrachhügel =9ebeb0
+Allach =61be73
+Wurmgrube =a3beb5
+
+Aying =adbebf
+Hikend =b2bec4
+Moonsen =66be78
+Oberhaigenhügel =a8beba
+
+Unterhaigenhügel =bcbecf
+Haigenbach =b7bec9
+Holswang =1dbe00
+Dottrahof =c2bed4
+
+
+Grissenwald =27a51a
+Ambostein =22b905
+Schwarzgipfel =2ca51f
+
+Segeldorf =37a529
+Wissenburg =22b40a
+Khazid_Agruli =46a538
+Wissenhügel =3ca52e
+Dakarhaus =41a533
+Maselwald =31a524
+
+Dotternhügel =4ba53d
+Grätz =55a547
+Dotternbach =50a542
+Dottervorgebirge =22be00
+
+Blood_Keep =5aa54d
+Kröning =5fa552
+Lenkawald =64a557
+Grissenquelle =6aa55c
+Lenkahügel =6fa561
+
+Rohrhausen =22aa14
+Windisch =22a51a
+Gorsumthal =2caa1f
+Gorsum_Vale =27aa1a
+
+
+
+Oberwildenhügel =b97834
+Kleinwilden =b47839
+Diepolz =be782f
+Sexau =af783e
+
+
+Mecklenburg =9a7848
+Rosenhausen =a4783e
+Sollweg =9f7843
+Neukirch =907852
+Elzach =8b7857
+Tannau =95784d
+Bernau =86785d
+Wildenhügel =c87824
+
+Wittenhausen =d27818
+Westen_Finnwald =717871
+Westbeuerhügel =817862
+Haugothal =77786c
+Haverz =7c7867
+
+
+Wolfurt =62783b
+East_kleinwilden =6c7876
+Wilhams =67787b
+Mauchen =627880
+Achenwald =5d7885
+
+Staig =537892
+Finning =537892
+Ostfinwald =4478a1
+Achenfinwald =49789c
+East_Beuer_Hills =58788d
+
+Habichtwald =3e78a7
+Hagenwald =53784b
+Ellwagen =3978ae
+Schönwald =3478b3
+
+Kislegg =2a78bd
+Moosach =587846
+Aitrang =2578c3
+
+Waldbach =2078c8
+Rusch =1b78cd
+Sulz_Hills =2f78b8
+
+Hagen_Hills =0b78dc
+Gestratz =1178d7
+Ballenhof =677836
+Marschwald =1678d2
+
+Sussenthal =79400a
+East_Obernwald =7e400f
+Ummenbach =714014
+Obenheidenland =834314
+Sussenquelle =793b05
+
+Hutten_Hills =773d1a
+Taals_Fangs =813d24
+Ollersbach =7c3d1f
+Vals =71481a
+Krossbach =863d30
+Steingart =863d29
+
+Marscheidenland =8b402b
+Madau =8b4530
+Rushc =8b4836
+Erbshausen =714d1f
+
+Mendelhofe =90402e
+Schmirn =954333
+Hochsölden =954033
+
+Raggel_Hills =9f4a3d
+Raggel_FootHills =9a4538
+Kazad_Zhum =9f483b
+Diehlendorf =a24f40
+Mecklenthal =713b00
+Oberreikquelle =9d483b
+
+Wenns =af5a59
+Mathon =b15f5e
+Damulwald =b46161
+Hochsleben =715224
+Kauns =a44f4f
+Minor_Raggel_Hills =aa5454
+Osterzell =af5c5c
+Pfeildorf = aa7839
+Finnwald = 4e7897
+
 wasteland_blocker = 1E0F0D
 
 testprovince1 = 53A54C

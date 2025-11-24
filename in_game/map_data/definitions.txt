@@ -4,6 +4,195 @@
 			#always have at least 256 normal non-wasteland locations on the map and code!!!
 			my_land_area = {
 				my_land_province = {
+
+                    Pfeildorf
+                    Finnwald
+
+                    Kreutzhofen
+                    Geistwald
+                    Boashügel
+                    Brenzwald
+                    Tierhügel
+                    Michelfurt
+                    Sonnefurt
+
+                    Hardtenau
+                    Bezauhügel
+                    Ostrach
+                    Lederfeld
+                    Alpirswald
+                    Bezauwald
+
+                    Geltensumpf
+                    Kell
+                    Thalfang
+                    Oshausen
+                    Legau
+                    Hornfeld
+
+                    Wusteburg
+                    Wundtwald
+                    Serrig
+                    Ertigen
+                    Melkenfeld
+                    Hitisau
+
+                    Ellhügel
+                    Ziertwald
+                    Tannhügel
+
+                    Merogenfeld
+                    Dietenwald
+                    Trulben
+
+                    Salmhügel
+                    Nehren
+                    Salmfähre
+                    Ostsalmwald
+
+                    Salmwald
+                    Geschberg
+                    Auggen
+                    Lauben
+                    Kazad_Tark
+
+                    Meissen
+                    Kazad_Almon
+                    Schwarzweidesumpf
+                    Heisenberg
+                    Rundstedt
+                    Oberharrachwald
+
+                    Unterharrachwald
+                    Harrachhügel
+                    Allach
+                    Wurmgrube
+
+                    Aying
+                    Hikend
+                    Moonsen
+                    Oberhaigenhügel
+
+                    Unterhaigenhügel
+                    Haigenbach
+                    Holswang
+                    Dottrahof
+
+                    Grissenwald
+                    Ambostein
+                    Schwarzgipfel
+
+                    Segeldorf
+                    Wissenburg
+                    Khazid_Agruli
+                    Wissenhügel
+                    Dakarhaus
+                    Maselwald
+
+                    Dotternhügel
+                    Grätz
+                    Dotternbach
+                    Dottervorgebirge
+
+                    Blood_Keep
+                    Kröning
+                    Lenkawald
+                    Grissenquelle
+                    Lenkahügel
+
+                    Rohrhausen
+                    Windisch
+                    Gorsumthal
+                    Gorsum_Vale
+
+                    Oberwildenhügel
+                    Kleinwilden
+                    Diepolz
+                    Sexau
+
+                    Pfeildorf
+                    Mecklenburg
+                    Rosenhausen
+                    Sollweg
+                    Neukirch
+                    Elzach
+                    Tannau
+                    Bernau
+                    Wildenhügel
+
+                    Wittenhausen
+                    Westen_Finnwald
+                    Westbeuerhügel
+                    Haugothal
+                    Haverz
+
+                    Wolfurt
+                    East_kleinwilden
+                    Wilhams
+                    Mauchen
+                    Achenwald
+
+                    Staig
+                    Finning
+                    Ostfinwald
+                    Achenfinwald
+                    East_Beuer_Hills
+
+                    Habichtwald
+                    Hagenwald
+                    Ellwagen
+                    Schönwald
+
+                    Kislegg
+                    Moosach
+                    Aitrang
+
+                    Waldbach
+                    Rusch
+                    Sulz_Hills
+
+                    Hagen_Hills
+                    Gestratz
+                    Ballenhof
+                    Marschwald
+
+                    Sussenthal
+                    East_Obernwald
+                    Ummenbach
+                    Obenheidenland
+                    Sussenquelle
+
+                    Hutten_Hills
+                    Taals_Fangs
+                    Ollersbach
+                    Vals
+                    Krossbach
+                    Steingart
+
+                    Marscheidenland
+                    Madau
+                    Rushc
+                    Erbshausen
+
+                    Mendelhofe
+                    Schmirn
+                    Hochsölden
+
+                    Raggel_Hills
+                    Raggel_FootHills
+                    Kazad_Zhum
+                    Diehlendorf
+                    Mecklenthal
+                    Oberreikquelle
+
+                    Wenns
+                    Mathon
+                    Damulwald
+                    Hochsleben
+                    Kauns
+                    Minor_Raggel_Hills
+                    Osterzell
+
 					testprovince1
 					testprovince2
 					testprovince3

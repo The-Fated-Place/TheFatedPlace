@@ -6,9 +6,40 @@ international_organization_manager = {
             TAL
         }
         laws = {
-            manaan_policy
+            sigmar_policy
         }
         icon = cult_icon_manaan
+        variables = {
+            cult_favor = 30
+            religion = religion:imperial_cults
+        }
+        areas = {
+
+        }
+        provinces = {
+
+        }
+        locations = {
+
+            testprovince2
+            testprovince3
+            testprovince4
+            testprovince5
+            testprovince6
+        }
+
+    }
+
+    add_international_organization = { #sigmar
+        type = cult
+        creation_date = 1.1.1
+        members = {
+            TAL
+        }
+        laws = {
+            sigmar_policy
+        }
+        icon = cult_icon_sigmar
         variables = {
             cult_favor = 30
             religion = religion:imperial_cults
