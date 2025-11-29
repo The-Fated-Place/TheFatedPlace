@@ -258,7 +258,7 @@
 			male_names = { }
 			female_names = { }
 		}
-		language_reikspiel_nordlander = { #Strong Norse flavour
+		language_reikspiel_nordlander = {
 			male_names = {
 				name_ake
 				name_anund
@@ -355,7 +355,201 @@
 				name_thyra
 			}
 		}
-		language_reikspiel_westerlander = {	# heavy Dutch/Flemish influence
+        language_reikspiel_ostermarker = {
+            male_names = {
+                name_ake
+                name_anund
+                name_arnbjorn
+                name_arne
+                name_arnfinn
+                name_asbjorn
+                name_asger
+                name_bagge
+                name_birger
+                name_bjorn
+                name_borkvard
+                name_botulf
+                name_dag
+                name_didrik
+                name_eigil
+                name_einar
+                name_eirik
+                name_erlending
+                name_erling
+                name_esben
+                name_faste
+                name_filip
+                name_finn
+                name_frode
+                name_gorm
+                name_gudbrand
+                name_gudmund
+                name_gudrod
+                name_hafdan
+                name_hakan
+                name_haldor
+                name_halfdan
+                name_hardeknut
+                name_hjalmar
+                name_ingolf
+                name_ivar
+                name_kettil
+                name_klas
+                name_knut
+                name_kol
+                name_kolbjorn
+                name_lars
+                name_lodin
+                name_mikkel
+                name_nils
+                name_odd
+                name_olaf
+                name_orm
+                name_orvar
+                name_ragnvald
+                name_sigtrygg
+                name_sigurd
+                name_skjalg
+                name_starkad
+                name_sven
+                name_svend
+                name_thorbjorn
+                name_torkel
+                name_tormod
+                name_torolf
+                name_torstein
+            }
+            female_names = {
+                name_agnethe
+                name_alfhild
+                name_ase
+                name_ashild
+                name_asta
+                name_benedikte
+                name_birgitta
+                name_bodil
+                name_edla
+                name_eldrid
+                name_elisabet
+                name_freja
+                name_gudrid
+                name_gunnhild
+                name_hafrid
+                name_helmi
+                name_ingebjorg
+                name_ingeger
+                name_ingrid
+                name_kristina
+                name_margrete
+                name_ragnahild
+                name_ragnfrid
+                name_ragnhild
+                name_sunniva
+                name_svanhild
+                name_thora
+                name_thorborg
+                name_thordis
+                name_thyra
+            }
+        }
+        language_reikspiel_ostlander = {
+            male_names = {
+                name_ake
+                name_anund
+                name_arnbjorn
+                name_arne
+                name_arnfinn
+                name_asbjorn
+                name_asger
+                name_bagge
+                name_birger
+                name_bjorn
+                name_borkvard
+                name_botulf
+                name_dag
+                name_didrik
+                name_eigil
+                name_einar
+                name_eirik
+                name_erlending
+                name_erling
+                name_esben
+                name_faste
+                name_filip
+                name_finn
+                name_frode
+                name_gorm
+                name_gudbrand
+                name_gudmund
+                name_gudrod
+                name_hafdan
+                name_hakan
+                name_haldor
+                name_halfdan
+                name_hardeknut
+                name_hjalmar
+                name_ingolf
+                name_ivar
+                name_kettil
+                name_klas
+                name_knut
+                name_kol
+                name_kolbjorn
+                name_lars
+                name_lodin
+                name_mikkel
+                name_nils
+                name_odd
+                name_olaf
+                name_orm
+                name_orvar
+                name_ragnvald
+                name_sigtrygg
+                name_sigurd
+                name_skjalg
+                name_starkad
+                name_sven
+                name_svend
+                name_thorbjorn
+                name_torkel
+                name_tormod
+                name_torolf
+                name_torstein
+            }
+            female_names = {
+                name_agnethe
+                name_alfhild
+                name_ase
+                name_ashild
+                name_asta
+                name_benedikte
+                name_birgitta
+                name_bodil
+                name_edla
+                name_eldrid
+                name_elisabet
+                name_freja
+                name_gudrid
+                name_gunnhild
+                name_hafrid
+                name_helmi
+                name_ingebjorg
+                name_ingeger
+                name_ingrid
+                name_kristina
+                name_margrete
+                name_ragnahild
+                name_ragnfrid
+                name_ragnhild
+                name_sunniva
+                name_svanhild
+                name_thora
+                name_thorborg
+                name_thordis
+                name_thyra
+            }
+        }
+        language_reikspiel_westerlander = {	# heavy Dutch/Flemish influence
 			male_names = {
 				name_aad
 				name_aart

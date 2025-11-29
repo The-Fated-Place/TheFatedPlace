@@ -154,7 +154,7 @@ nordlander = {
 		human_group
 		imperial_group
 	}
-}\
+}
 ostermarker = {
 	language = language_reikspiel_ostermarker # language or dialect
 	
@@ -491,6 +491,346 @@ sudenburger = {
 		westerlander = positive
 		wissenlander = positive
 		mootlander = positive
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+
+#Tribal Identity
+asoborn = {
+	language = language_reikspiel_stirlander # language or dialect
+
+	color = map_stirland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+brigundian = {
+	language = language_reikspiel_averlander # language or dialect
+
+	color = map_averland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+cherusen = {
+	language = language_reikspiel_hochlander # language or dialect
+
+	color = map_hochland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+endal = {
+	language = language_reikspiel_westerlander # language or dialect
+
+	color = map_wasteland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+jutones = {
+	language = language_reikspiel_nordlander # language or dialect
+
+	color = map_nordland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+unberogen = {
+	language = language_reikspiel_reiklander # language or dialect
+
+	color = map_reikland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+udoses = {
+	language = language_reikspiel_ostlander # language or dialect
+
+	color = map_ostland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+thuringen = {
+	language = language_reikspiel_drakwalder # language or dialect
+
+	color = map_drakwald # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+teutogen = {
+	language = language_reikspiel_middenlander # language or dialect
+
+	color = map_middenland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+taleuten = {
+	language = language_reikspiel_talabeclander # language or dialect
+
+	color = map_talabecland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+ostagoth = {
+	language = language_reikspiel_ostermarker # language or dialect
+
+	color = map_ostermark # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+merogen = {
+	language = language_reikspiel_wissenlander # language or dialect
+
+	color = map_wissenland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		human_group
+		imperial_group
+	}
+}
+menogoth = {
+	language = language_reikspiel_wissenlander # language or dialect
+
+	color = map_solland # jomini color
+
+	tags = { european_gfx } # gfx tags
+
+	country_modifier = {
+
+	}
+	location_modifier = {
+
+	}
+	character_modifier = {
+
+	}
+
+	opinions = {
+
 	}
 
 	culture_groups = {
